@@ -1,0 +1,147 @@
+import json
+from datetime import datetime
+
+OUT_JSON = "entreprise_attack/cyber_graphrag_example.json"
+OUT_HTML = "entreprise_attack/cyber_graphrag_example.html"
+
+# -----------------------------
+# Example Nodes (All Components)
+# -----------------------------
+nodes = [
+    {"id":"TA0006","type":"tactic","name":"Credential Access"},
+    {"id":"T1003","type":"technique","name":"OS Credential Dumping"},
+    {"id":"T1003.001","type":"sub-technique","name":"LSASS Memory"},
+    {"id":"M1026","type":"mitigation","name":"Privileged Account Management"},
+    {"id":"G0007","type":"group","name":"Example Threat Group"},
+    {"id":"S0002","type":"software","name":"Example Malware Tool"},
+    {"id":"DS0017","type":"data_source","name":"Process Monitoring"},
+    {"id":"DC0001","type":"data_component","name":"Process Creation"},
+    {"id":"C001","type":"campaign","name":"Example Campaign"}
+]
+
+# -----------------------------
+# Example Relations
+# -----------------------------
+edges = [
+    {"source":"T1003","relation":"belongs_to","target":"TA0006"},
+    {"source":"T1003.001","relation":"subtechnique_of","target":"T1003"},
+    {"source":"M1026","relation":"mitigates","target":"T1003"},
+    {"source":"G0007","relation":"uses","target":"T1003"},
+    {"source":"G0007","relation":"uses","target":"S0002"},
+    {"source":"S0002","relation":"uses","target":"T1003"},
+    {"source":"DS0017","relation":"has_component","target":"DC0001"},
+    {"source":"DC0001","relation":"detects","target":"T1003"},
+    {"source":"C001","relation":"attributed_to","target":"G0007"},
+    {"source":"T1003","relation":"related_to","target":"T1003.001"}
+]
+
+graph = {
+    "meta": {
+        "name": "Cyber GraphRAG Example",
+        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "description": "Example Cyber GraphRAG structure with tactics, techniques, mitigation, groups, software, detection, campaign."
+    },
+    "nodes": nodes,
+    "edges": edges
+}
+
+# -----------------------------
+# Save JSON
+# -----------------------------
+with open(OUT_JSON, "w", encoding="utf-8") as f:
+    json.dump(graph, f, indent=2)
+
+print("Saved:", OUT_JSON)
+
+# -----------------------------
+# Generate Interactive HTML Graph
+# -----------------------------
+graph_str = json.dumps(graph)
+
+html = f"""
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cyber GraphRAG Example</title>
+<script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+<style>
+body {{ margin:0; font-family:Arial; }}
+#cy {{ width:100vw; height:100vh; }}
+</style>
+</head>
+<body>
+<div id="cy"></div>
+<script>
+const graph = {graph_str};
+
+const elements = [];
+
+for (const n of graph.nodes) {{
+  elements.push({{
+    data: {{
+      id: n.id,
+      label: n.id + "\\n" + n.name,
+      type: n.type
+    }}
+  }});
+}}
+
+for (const e of graph.edges) {{
+  elements.push({{
+    data: {{
+      id: e.source + "_" + e.target,
+      source: e.source,
+      target: e.target,
+      label: e.relation
+    }}
+  }});
+}}
+
+const cy = cytoscape({{
+  container: document.getElementById('cy'),
+  elements: elements,
+  style: [
+    {{
+      selector: 'node',
+      style: {{
+        'label': 'data(label)',
+        'text-wrap': 'wrap',
+        'text-max-width': 140,
+        'text-valign': 'center',
+        'text-halign': 'center',
+        'font-size': 10,
+        'background-color': '#2563eb',
+        'color': 'black',
+        'width': 60,
+        'height': 60
+      }}
+    }},
+    {{
+      selector: 'edge',
+      style: {{
+        'label': 'data(label)',
+        'curve-style': 'bezier',
+        'target-arrow-shape': 'triangle',
+        'line-color': '#64748b',
+        'target-arrow-color': '#64748b',
+        'font-size': 9,
+        'text-rotation': 'autorotate'
+      }}
+    }}
+  ],
+  layout: {{
+    name: 'cose',
+    animate: true
+  }}
+}});
+</script>
+</body>
+</html>
+"""
+
+with open(OUT_HTML, "w", encoding="utf-8") as f:
+    f.write(html)
+
+print("Saved:", OUT_HTML)
+print("Done.")
