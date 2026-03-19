@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "name": "vuln_example_graph",
+    "generated_at": "2026-03-17T07:37:24.097605Z",
+    "description": "Example subgraph: first 1 CVEs + 1-hop neighbors.",
+    "total_nodes": 26,
+    "total_edges": 56
+  },
+  "nodes": [
+    {
+      "id": "DATE::2026-01-01T09:15:51.113",
+      "type": "date",
+      "name": "2026-01-01T09:15:51.113",
+      "description": "",
+      "properties": {
+        "kind": "published"
+      }
+    },
+    {
+      "id": "CVSS::CVE-2026-0544::cvssMetricV31::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "type": "cvss",
+      "name": "cvssMetricV31 HIGH 7.3",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV31",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+        "baseScore": 7.3,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "LOW",
+        "integrityImpact": "LOW",
+        "availabilityImpact": "LOW"
+      }
+    },
+    {
+      "id": "SEVERITY::HIGH",
+      "type": "severity",
+      "name": "HIGH",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "SOURCE::cna@vuldb.com",
+      "type": "source_identifier",
+      "name": "cna@vuldb.com",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "VECTOR::AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "type": "cvss_vector",
+      "name": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV2"
+      }
+    },
+    {
+      "id": "URL::https://vuldb.com/?ctiid.339331",
+      "type": "url",
+      "name": "https://vuldb.com/?ctiid.339331",
+      "description": "",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "tags": [
+          "Permissions Required",
+          "VDB Entry"
+        ]
+      }
+    },
+    {
+      "id": "SEVERITY::CRITICAL",
+      "type": "severity",
+      "name": "CRITICAL",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "CWE-74",
+      "type": "cwe",
+      "name": "CWE-74",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "CVSS::CVE-2026-0544::cvssMetricV31::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "type": "cvss",
+      "name": "cvssMetricV31 CRITICAL 9.8",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV31",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "baseScore": 9.8,
+        "baseSeverity": "CRITICAL",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "HIGH"
+      }
+    },
+    {
+      "id": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "cpe",
+      "name": "cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "description": "",
+      "properties": {
+        "cpe": "cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+        "part": "a",
+        "vendor": "itsourcecode",
+        "product": "school_management_system",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "URL::https://github.com/ltranquility/CVE/issues/31",
+      "type": "url",
+      "name": "https://github.com/ltranquility/CVE/issues/31",
+      "description": "",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "tags": [
+          "Issue Tracking",
+          "Exploit",
+          "Third Party Advisory"
+        ]
+      }
+    },
+    {
+      "id": "URL::https://itsourcecode.com/",
+      "type": "url",
+      "name": "https://itsourcecode.com/",
+      "description": "",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "tags": [
+          "Product"
+        ]
+      }
+    },
+    {
+      "id": "CWE-89",
+      "type": "cwe",
+      "name": "CWE-89",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "VENDOR::itsourcecode",
+      "type": "vendor",
+      "name": "itsourcecode",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "VECTOR::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "type": "cvss_vector",
+      "name": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV31"
+      }
+    },
+    {
+      "id": "URL::https://vuldb.com/?id.339331",
+      "type": "url",
+      "name": "https://vuldb.com/?id.339331",
+      "description": "",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "tags": [
+          "Third Party Advisory",
+          "VDB Entry"
+        ]
+      }
+    },
+    {
+      "id": "VECTOR::CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "type": "cvss_vector",
+      "name": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV40"
+      }
+    },
+    {
+      "id": "URL::https://vuldb.com/?submit.728909",
+      "type": "url",
+      "name": "https://vuldb.com/?submit.728909",
+      "description": "",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "tags": [
+          "Third Party Advisory",
+          "VDB Entry"
+        ]
+      }
+    },
+    {
+      "id": "DATE::2026-01-06T19:25:10.050",
+      "type": "date",
+      "name": "2026-01-06T19:25:10.050",
+      "description": "",
+      "properties": {
+        "kind": "modified"
+      }
+    },
+    {
+      "id": "SEVERITY::MEDIUM",
+      "type": "severity",
+      "name": "MEDIUM",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "CVSS::CVE-2026-0544::cvssMetricV2::AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "type": "cvss",
+      "name": "cvssMetricV2  7.5",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV2",
+        "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+        "baseScore": 7.5,
+        "baseSeverity": null,
+        "attackVector": null,
+        "attackComplexity": null,
+        "privilegesRequired": null,
+        "userInteraction": null,
+        "scope": null,
+        "confidentialityImpact": "PARTIAL",
+        "integrityImpact": "PARTIAL",
+        "availabilityImpact": "PARTIAL"
+      }
+    },
+    {
+      "id": "VERSION::1.0",
+      "type": "version",
+      "name": "1.0",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "VECTOR::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "type": "cvss_vector",
+      "name": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV31"
+      }
+    },
+    {
+      "id": "CVE-2026-0544",
+      "type": "cve",
+      "name": "CVE-2026-0544",
+      "description": "A security flaw has been discovered in itsourcecode School Management System 1.0. This affects an unknown part of the file /student/index.php. The manipulation of the argument ID results in sql injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.",
+      "properties": {
+        "vulnStatus": "Analyzed",
+        "sourceIdentifier": "cna@vuldb.com",
+        "published": "2026-01-01T09:15:51.113",
+        "lastModified": "2026-01-06T19:25:10.050"
+      }
+    },
+    {
+      "id": "PRODUCT::school_management_system",
+      "type": "product",
+      "name": "school_management_system",
+      "description": "",
+      "properties": {}
+    },
+    {
+      "id": "CVSS::CVE-2026-0544::cvssMetricV40::CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "type": "cvss",
+      "name": "cvssMetricV40 MEDIUM 6.9",
+      "description": "",
+      "properties": {
+        "metric_type": "cvssMetricV40",
+        "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "baseScore": 6.9,
+        "baseSeverity": "MEDIUM",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": null,
+        "confidentialityImpact": null,
+        "integrityImpact": null,
+        "availabilityImpact": null
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "CVE-2026-0544",
+      "type": "reported_by",
+      "target": "SOURCE::cna@vuldb.com"
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "published_on",
+      "target": "DATE::2026-01-01T09:15:51.113"
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "modified_on",
+      "target": "DATE::2026-01-06T19:25:10.050"
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_weakness",
+      "target": "CWE-74",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "weakness_type": "Secondary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_weakness",
+      "target": "CWE-89",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "weakness_type": "Secondary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_weakness",
+      "target": "CWE-89",
+      "properties": {
+        "source": "nvd@nist.gov",
+        "weakness_type": "Primary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "affects",
+      "target": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "properties": {
+        "vulnerable": true,
+        "matchCriteriaId": "D4F6842D-98A5-4EDC-9580-D40F28FCB304",
+        "versionStartIncluding": null,
+        "versionStartExcluding": null,
+        "versionEndIncluding": null,
+        "versionEndExcluding": null
+      }
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_reference",
+      "target": "URL::https://github.com/ltranquility/CVE/issues/31",
+      "properties": {
+        "tags": [
+          "Issue Tracking",
+          "Exploit",
+          "Third Party Advisory"
+        ]
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_reference",
+      "target": "URL::https://itsourcecode.com/",
+      "properties": {
+        "tags": [
+          "Product"
+        ]
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_reference",
+      "target": "URL::https://vuldb.com/?ctiid.339331",
+      "properties": {
+        "tags": [
+          "Permissions Required",
+          "VDB Entry"
+        ]
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_reference",
+      "target": "URL::https://vuldb.com/?id.339331",
+      "properties": {
+        "tags": [
+          "Third Party Advisory",
+          "VDB Entry"
+        ]
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_reference",
+      "target": "URL::https://vuldb.com/?submit.728909",
+      "properties": {
+        "tags": [
+          "Third Party Advisory",
+          "VDB Entry"
+        ]
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_cvss",
+      "target": "CVSS::CVE-2026-0544::cvssMetricV40::CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "metric_entry_type": "Secondary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_severity",
+      "target": "SEVERITY::MEDIUM",
+      "properties": {
+        "metric_type": "cvssMetricV40"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_vector",
+      "target": "VECTOR::CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+      "properties": {
+        "metric_type": "cvssMetricV40"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_cvss",
+      "target": "CVSS::CVE-2026-0544::cvssMetricV31::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "metric_entry_type": "Secondary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_severity",
+      "target": "SEVERITY::HIGH",
+      "properties": {
+        "metric_type": "cvssMetricV31"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_vector",
+      "target": "VECTOR::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "properties": {
+        "metric_type": "cvssMetricV31"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_cvss",
+      "target": "CVSS::CVE-2026-0544::cvssMetricV31::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "properties": {
+        "source": "nvd@nist.gov",
+        "metric_entry_type": "Primary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_severity",
+      "target": "SEVERITY::CRITICAL",
+      "properties": {
+        "metric_type": "cvssMetricV31"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_vector",
+      "target": "VECTOR::CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "properties": {
+        "metric_type": "cvssMetricV31"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_cvss",
+      "target": "CVSS::CVE-2026-0544::cvssMetricV2::AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "properties": {
+        "source": "cna@vuldb.com",
+        "metric_entry_type": "Secondary"
+      }
+    },
+    {
+      "source": "CVE-2026-0544",
+      "type": "has_vector",
+      "target": "VECTOR::AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "properties": {
+        "metric_type": "cvssMetricV2"
+      }
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_vendor",
+      "target": "VENDOR::itsourcecode"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_product",
+      "target": "PRODUCT::school_management_system"
+    },
+    {
+      "source": "CPE::cpe:2.3:a:itsourcecode:school_management_system:1.0:*:*:*:*:*:*:*",
+      "type": "has_version",
+      "target": "VERSION::1.0"
+    }
+  ]
+}

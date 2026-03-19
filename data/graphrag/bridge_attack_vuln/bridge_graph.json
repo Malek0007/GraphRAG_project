@@ -1,0 +1,1077 @@
+{
+  "meta": {
+    "name": "bridge_graph",
+    "description": "Cross-layer bridge edges between vulnerability and ATT&CK graphs.",
+    "generated_at": "2026-03-17T08:06:27.715902Z",
+    "total_edges": 82
+  },
+  "nodes": [],
+  "edges": [
+    {
+      "source": "CVE-2026-22184",
+      "target": "S0086",
+      "type": "related_software",
+      "method": "name_match",
+      "confidence": 1.0,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "product=zlib",
+        "software=ZLib"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1105",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1082",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1560.002",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1543.003",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1083",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1113",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1059.003",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1007",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1041",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1071.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22184",
+      "target": "T1036.005",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "S1166",
+      "type": "related_software",
+      "method": "name_match",
+      "confidence": 0.889,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "product=solr",
+        "software=Solar"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1053.005",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1105",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1020",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1573.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1041",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1082",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1070.004",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22022",
+      "target": "T1132.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "S1166",
+      "type": "related_software",
+      "method": "name_match",
+      "confidence": 0.889,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "product=solr",
+        "software=Solar"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1053.005",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1105",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1020",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1573.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1041",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1082",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1070.004",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-22444",
+      "target": "T1132.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=solr",
+        "software_id=S1166"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "S0633",
+      "type": "related_software",
+      "method": "name_match",
+      "confidence": 1.0,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "product=sliver",
+        "software=Sliver"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1027",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1055",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1083",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1027.004",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1001.002",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1134",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1059.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1071.004",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1027.013",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1573.002",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1090.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1016",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1113",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1071.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1105",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1573.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1071",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1558.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1041",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1548.002",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1132.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1003.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25760",
+      "target": "T1049",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=sliver",
+        "software_id=S0633"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "S0630",
+      "type": "related_software",
+      "method": "name_match",
+      "confidence": 0.923,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "product=nebula",
+        "software=Nebulae"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1105",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1680",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1005",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1095",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1547.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1057",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1106",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1036.004",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1070.004",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1543.003",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1036.005",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1574.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1059.003",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1083",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-25793",
+      "target": "T1573.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=nebula",
+        "software_id=S0630"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "S0086",
+      "type": "related_software",
+      "method": "name_match",
+      "confidence": 1.0,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "product=zlib",
+        "software=ZLib"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1105",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1082",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1560.002",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1543.003",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1083",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1113",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1059.003",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1007",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1041",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1071.001",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    },
+    {
+      "source": "CVE-2026-27171",
+      "target": "T1036.005",
+      "type": "exploited_via",
+      "method": "software_to_technique",
+      "confidence": 0.8,
+      "layer_from": "vulnerability",
+      "layer_to": "attack",
+      "evidence": [
+        "matched_product=zlib",
+        "software_id=S0086"
+      ]
+    }
+  ]
+}
