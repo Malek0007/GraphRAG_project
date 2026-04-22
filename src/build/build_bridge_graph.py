@@ -6,7 +6,7 @@ from datetime import datetime
 ATTACK_FILE = "data/graphrag/attacks/attack_graph_graphrag.json"
 VULN_FILE = "data/graphrag/vulnerabilities/vuln_graph_graphrag.json"
 OUT_BRIDGE = "data/graphrag/bridge_attack_vuln/bridge_graph.json"
-OUT_GLOBAL = "data/graphrag/bridge_attack_vuln/global_graph.json"
+OUT_GLOBAL = "data/graphrag/multi_layer/global_graph.json"
 
 
 def ensure_parent_dir(path):

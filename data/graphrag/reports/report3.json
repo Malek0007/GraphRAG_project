@@ -1,0 +1,86 @@
+{
+  "report_id": "eset_keydnap_osx",
+  "source": "ESET Research",
+  "title": "OSX/Keydnap Malware Credential Theft",
+  "malware_family": "OSX/Keydnap",
+  "platform": "macOS",
+  "nodes": [
+    {"id": "OSX/Keydnap", "type": "malware"},
+    {"id": "macOS", "type": "platform"},
+    {"id": "Keychain", "type": "credential_store"},
+    {"id": "LaunchAgents", "type": "persistence_mechanism"},
+    {"id": "Tor2Web", "type": "infrastructure"},
+    {"id": "Downloader", "type": "component"},
+    {"id": "Backdoor", "type": "component"},
+    {"id": "Mach-O executable", "type": "file_type"},
+    {"id": "Terminal", "type": "process"},
+    {"id": "Finder", "type": "process"},
+    {"id": "Privilege Escalation Prompt", "type": "artifact"},
+    {"id": "RC4", "type": "crypto"},
+    {"id": "Credential Dumping", "type": "behavior"},
+    {"id": "Persistence", "type": "behavior"},
+    {"id": "Defense Evasion", "type": "behavior"},
+    {"id": "Command Execution", "type": "behavior"}
+  ],
+  "edges": [
+    {"from": "OSX/Keydnap", "to": "macOS", "relation": "TARGETS"},
+
+    {"from": "OSX/Keydnap", "to": "Credential Dumping", "relation": "PERFORMS"},
+    {"from": "Credential Dumping", "to": "Keychain", "relation": "EXTRACTS"},
+
+    {"from": "OSX/Keydnap", "to": "Persistence", "relation": "IMPLEMENTS"},
+    {"from": "Persistence", "to": "LaunchAgents", "relation": "USES"},
+
+    {"from": "OSX/Keydnap", "to": "Backdoor", "relation": "DEPLOYS"},
+    {"from": "Backdoor", "to": "Tor2Web", "relation": "CONNECTS_TO"},
+
+    {"from": "OSX/Keydnap", "to": "Downloader", "relation": "USES"},
+    {"from": "Downloader", "to": "Mach-O executable", "relation": "DISGUISES_AS"},
+
+    {"from": "Mach-O executable", "to": "Finder", "relation": "TRICKS"},
+    {"from": "Finder", "to": "Terminal", "relation": "EXECUTES"},
+
+    {"from": "OSX/Keydnap", "to": "Privilege Escalation Prompt", "relation": "SPOOFS"},
+    {"from": "Privilege Escalation Prompt", "to": "User Credentials", "relation": "STEALS"},
+
+    {"from": "OSX/Keydnap", "to": "RC4", "relation": "USES"},
+    {"from": "OSX/Keydnap", "to": "Defense Evasion", "relation": "PERFORMS"},
+    {"from": "OSX/Keydnap", "to": "Command Execution", "relation": "PERFORMS"}
+  ],
+  "observables": [
+    {
+      "type": "file_pattern",
+      "value": ".jpg (with trailing space) executed as Mach-O"
+    },
+    {
+      "type": "directory",
+      "value": "/Library/LaunchAgents/"
+    },
+    {
+      "type": "process",
+      "value": "/usr/libexec/icloudsyncd"
+    },
+    {
+      "type": "command_pattern",
+      "value": "/api/osx/keychain"
+    },
+    {
+      "type": "network",
+      "value": "*.onion.to (Tor2Web proxy)"
+    }
+  ],
+  "attack_techniques": [
+    "T1059",
+    "T1547",
+    "T1003",
+    "T1204",
+    "T1027"
+  ],
+  "evidence": [
+    "Malware steals keychain credentials from macOS",
+    "Persistence achieved via LaunchAgents directory",
+    "Backdoor communicates through Tor2Web proxy",
+    "Downloader disguises Mach-O file as benign document",
+    "Fake privilege prompt used to steal credentials"
+  ]
+}

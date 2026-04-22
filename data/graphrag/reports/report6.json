@@ -1,0 +1,146 @@
+{
+  "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+  "source": "Kaspersky Securelist",
+  "title": "ScarCruft continues to evolve, introduces Bluetooth harvester",
+  "published_date": "2019-05-13",
+  "threat_actor": "ScarCruft",
+  "summary": "ScarCruft used a multi-stage infection chain involving an initial dropper, UAC bypass, downloader, steganographic payload retrieval, and final deployment of ROKRAT, while also introducing a Bluetooth information harvester and overlapping victimology with DarkHotel and Konni.",
+  "nodes": [
+    {"id": "ScarCruft", "type": "threat_actor"},
+    {"id": "ROKRAT", "type": "malware"},
+    {"id": "Bluetooth Harvester", "type": "malware_module"},
+    {"id": "Initial Dropper", "type": "component"},
+    {"id": "Installer", "type": "component"},
+    {"id": "Downloader", "type": "component"},
+    {"id": "Configuration File", "type": "artifact"},
+    {"id": "Steganography", "type": "technique"},
+    {"id": "Image File with Appended Payload", "type": "artifact"},
+    {"id": "UAC Bypass", "type": "behavior"},
+    {"id": "CVE-2018-8120", "type": "vulnerability"},
+    {"id": "UACME", "type": "tool_or_method"},
+    {"id": "Windows UAC", "type": "security_feature"},
+    {"id": "Box", "type": "cloud_service"},
+    {"id": "Dropbox", "type": "cloud_service"},
+    {"id": "Pcloud", "type": "cloud_service"},
+    {"id": "Yandex", "type": "cloud_service"},
+    {"id": "/script", "type": "cloud_path"},
+    {"id": "/scriptout", "type": "cloud_path"},
+    {"id": "/english", "type": "cloud_path"},
+    {"id": "/video", "type": "cloud_path"},
+    {"id": "/scriptout path", "type": "cloud_path"},
+    {"id": "Information Theft", "type": "behavior"},
+    {"id": "Command Execution", "type": "behavior"},
+    {"id": "Data Exfiltration", "type": "behavior"},
+    {"id": "Bluetooth Device Information", "type": "data_type"},
+    {"id": "Windows Bluetooth APIs", "type": "api"},
+    {"id": "DarkHotel", "type": "threat_actor"},
+    {"id": "GreezeBackdoor", "type": "malware"},
+    {"id": "Konni", "type": "malware"},
+    {"id": "Vietnam Investment and Trading Companies", "type": "target_group"},
+    {"id": "Russian Investment and Trading Companies", "type": "target_group"},
+    {"id": "Diplomatic Agency in Hong Kong", "type": "target_group"},
+    {"id": "Diplomatic Agency in North Korea", "type": "target_group"}
+  ],
+  "edges": [
+    {"from": "ScarCruft", "to": "Initial Dropper", "relation": "USES"},
+    {"from": "Initial Dropper", "to": "UAC Bypass", "relation": "PERFORMS"},
+    {"from": "UAC Bypass", "to": "Windows UAC", "relation": "BYPASSES"},
+    {"from": "UAC Bypass", "to": "CVE-2018-8120", "relation": "USES"},
+    {"from": "UAC Bypass", "to": "UACME", "relation": "USES"},
+    {"from": "Installer", "to": "Downloader", "relation": "CREATES"},
+    {"from": "Installer", "to": "Configuration File", "relation": "CREATES"},
+    {"from": "Downloader", "to": "Configuration File", "relation": "USES"},
+    {"from": "Downloader", "to": "Steganography", "relation": "USES"},
+    {"from": "Downloader", "to": "Image File with Appended Payload", "relation": "DOWNLOADS"},
+    {"from": "Image File with Appended Payload", "to": "ROKRAT", "relation": "CONTAINS"},
+    {"from": "ScarCruft", "to": "ROKRAT", "relation": "DEPLOYS"},
+    {"from": "ROKRAT", "to": "Information Theft", "relation": "PERFORMS"},
+    {"from": "ROKRAT", "to": "Data Exfiltration", "relation": "PERFORMS"},
+    {"from": "ROKRAT", "to": "Command Execution", "relation": "PERFORMS"},
+    {"from": "ROKRAT", "to": "Box", "relation": "USES_CLOUD_SERVICE"},
+    {"from": "ROKRAT", "to": "Dropbox", "relation": "USES_CLOUD_SERVICE"},
+    {"from": "ROKRAT", "to": "Pcloud", "relation": "USES_CLOUD_SERVICE"},
+    {"from": "ROKRAT", "to": "Yandex", "relation": "USES_CLOUD_SERVICE"},
+    {"from": "ROKRAT", "to": "/script", "relation": "DOWNLOADS_COMMANDS_FROM"},
+    {"from": "ROKRAT", "to": "/scriptout", "relation": "UPLOADS_RESULTS_TO"},
+    {"from": "ROKRAT", "to": "/english", "relation": "USES_DIRECTORY"},
+    {"from": "ROKRAT", "to": "/video", "relation": "USES_DIRECTORY"},
+    {"from": "ScarCruft", "to": "Bluetooth Harvester", "relation": "USES"},
+    {"from": "Bluetooth Harvester", "to": "Windows Bluetooth APIs", "relation": "USES"},
+    {"from": "Bluetooth Harvester", "to": "Bluetooth Device Information", "relation": "COLLECTS"},
+    {"from": "ScarCruft", "to": "Vietnam Investment and Trading Companies", "relation": "TARGETS"},
+    {"from": "ScarCruft", "to": "Russian Investment and Trading Companies", "relation": "TARGETS"},
+    {"from": "ScarCruft", "to": "Diplomatic Agency in Hong Kong", "relation": "TARGETS"},
+    {"from": "ScarCruft", "to": "Diplomatic Agency in North Korea", "relation": "TARGETS"},
+    {"from": "ScarCruft", "to": "DarkHotel", "relation": "VICTIMOLOGY_OVERLAP_WITH"},
+    {"from": "ScarCruft", "to": "Konni", "relation": "VICTIMOLOGY_OVERLAP_WITH"},
+    {"from": "DarkHotel", "to": "GreezeBackdoor", "relation": "USES"}
+  ],
+  "observables": [
+    {
+      "type": "behavior_chain",
+      "value": "initial dropper -> UAC bypass -> installer -> downloader -> steganographic image payload -> ROKRAT"
+    },
+    {
+      "type": "cloud_paths",
+      "value": ["/script", "/scriptout", "/english", "/video"]
+    },
+    {
+      "type": "bluetooth_fields",
+      "value": ["Instance Name", "Address", "Class", "Connected", "Authenticated", "Remembered"]
+    },
+    {
+      "type": "ioc_hash",
+      "value": "02681a7fe708f39beb7b3cf1bd557ee9",
+      "description": "Bluetooth info harvester"
+    },
+    {
+      "type": "ioc_hash",
+      "value": "e8b23cfc805353f55ed67cf0af58f305",
+      "description": "UAC bypass (UACME)"
+    },
+    {
+      "type": "ioc_hash",
+      "value": "A76c4a79e6ff73bfd7149a49852e8916",
+      "description": "ROKRAT"
+    },
+    {
+      "type": "url",
+      "value": "http://34.13.42[.]35/uploads/1.jpg"
+    },
+    {
+      "type": "url",
+      "value": "https://34.13.42[.]35/uploads/newmode.php"
+    },
+    {
+      "type": "domain",
+      "value": "buttyfly.000webhostapp[.]com"
+    },
+    {
+      "type": "domain",
+      "value": "planar-progress.000webhostapp[.]com"
+    }
+  ],
+  "attack_techniques": [
+    "T1548",
+    "T1001.002"
+  ],
+  "evidence": [
+    {
+      "claim": "ScarCruft used a multi-stage binary infection chain with UAC bypass to elevate privileges.",
+      "evidence_text": "One of the most notable functions of the initial dropper is to bypass Windows UAC ... using CVE-2018-8120 or UACME."
+    },
+    {
+      "claim": "The downloader used steganography to fetch the next payload.",
+      "evidence_text": "The downloader uses steganography. The downloaded payload is an image file, but it contains an appended malicious payload to be decrypted."
+    },
+    {
+      "claim": "ROKRAT used cloud services for command retrieval and exfiltration.",
+      "evidence_text": "Commands are downloaded from the /script path ... results are uploaded to the /scriptout path ... forwarding collected data to Box, Dropbox, Pcloud and Yandex."
+    },
+    {
+      "claim": "ScarCruft introduced a Bluetooth device harvester.",
+      "evidence_text": "This malware uses Windows Bluetooth APIs to find information on connected Bluetooth devices and saves device information."
+    }
+  ]
+}

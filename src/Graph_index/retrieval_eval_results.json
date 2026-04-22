@@ -1,0 +1,1685 @@
+{
+  "num_questions": 40,
+  "aggregate": {
+    "avg_hit_at_k": 1.0,
+    "avg_id_precision": 0.2202,
+    "avg_id_recall": 0.5351,
+    "avg_id_f1": 0.2957,
+    "avg_mrr": 1.0,
+    "avg_recall_at_1": 0.208,
+    "avg_recall_at_5": 0.3171,
+    "avg_recall_at_10": 0.4061,
+    "by_category": {
+      "exact_lookup": {
+        "count": 5,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.3733,
+        "avg_id_f1": 0.1295
+      },
+      "attack_relationships": {
+        "count": 6,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.7,
+        "avg_id_f1": 0.3362
+      },
+      "cross_domain": {
+        "count": 8,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.539,
+        "avg_id_f1": 0.3331
+      },
+      "multi_hop": {
+        "count": 7,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.5085,
+        "avg_id_f1": 0.3275
+      },
+      "mixed_metadata": {
+        "count": 4,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.4667,
+        "avg_id_f1": 0.3206
+      },
+      "stress_negative": {
+        "count": 2,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.5,
+        "avg_id_f1": 0.125
+      },
+      "stress_multi_cve": {
+        "count": 1,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.1429,
+        "avg_id_f1": 0.0952
+      },
+      "stress_multi_tactic": {
+        "count": 2,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.8375,
+        "avg_id_f1": 0.5287
+      },
+      "stress_depth3": {
+        "count": 2,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.3875,
+        "avg_id_f1": 0.2024
+      },
+      "stress_intersection": {
+        "count": 1,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.8571,
+        "avg_id_f1": 0.5714
+      },
+      "stress_overlap": {
+        "count": 1,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.75,
+        "avg_id_f1": 0.3333
+      },
+      "stress_pruning": {
+        "count": 1,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.4,
+        "avg_id_f1": 0.2105
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "count": 8,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.5583
+      },
+      "medium": {
+        "count": 12,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.5239
+      },
+      "hard": {
+        "count": 20,
+        "avg_hit_at_k": 1.0,
+        "avg_id_recall": 0.5326
+      }
+    },
+    "hardest_to_retrieve": [
+      [
+        "S0633",
+        6
+      ],
+      [
+        "M1026",
+        4
+      ],
+      [
+        "TA0002",
+        4
+      ],
+      [
+        "S1166",
+        3
+      ],
+      [
+        "S0630",
+        3
+      ],
+      [
+        "T1055",
+        3
+      ],
+      [
+        "T1071.001",
+        3
+      ],
+      [
+        "T1134",
+        3
+      ],
+      [
+        "TA0003",
+        3
+      ],
+      [
+        "T1027.013",
+        3
+      ]
+    ]
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "category": "exact_lookup",
+      "difficulty": "easy",
+      "question": "What is CVE-2026-25760?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "S0633",
+        "CWE-22"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.3333,
+        "id_f1": 0.1176,
+        "mrr": 1.0,
+        "recall_at_1": 0.3333,
+        "recall_at_5": 0.3333,
+        "recall_at_10": 0.3333,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 3,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760"
+        ],
+        "missing_gold_ids": [
+          "CWE-22",
+          "S0633"
+        ],
+        "latency_seconds": 0.006
+      }
+    },
+    {
+      "id": "Q02",
+      "category": "exact_lookup",
+      "difficulty": "easy",
+      "question": "What is ATT&CK technique T1105?",
+      "gold_ids": [
+        "T1105",
+        "TA0011"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.5,
+        "id_f1": 0.125,
+        "mrr": 1.0,
+        "recall_at_1": 0.5,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.5,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 2,
+        "retrieved_gold_ids": [
+          "T1105"
+        ],
+        "missing_gold_ids": [
+          "TA0011"
+        ],
+        "latency_seconds": 0.023
+      }
+    },
+    {
+      "id": "Q03",
+      "category": "exact_lookup",
+      "difficulty": "easy",
+      "question": "Describe the Sliver C2 framework (S0633).",
+      "gold_ids": [
+        "S0633",
+        "G0016",
+        "G1021",
+        "G0127",
+        "C0018"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.2,
+        "id_f1": 0.1053,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.2,
+        "recall_at_10": 0.2,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "S0633"
+        ],
+        "missing_gold_ids": [
+          "C0018",
+          "G0016",
+          "G0127",
+          "G1021"
+        ],
+        "latency_seconds": 0.004
+      }
+    },
+    {
+      "id": "Q04",
+      "category": "exact_lookup",
+      "difficulty": "easy",
+      "question": "What is CVE-2026-22022 and what software does it affect?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "S1166",
+        "CWE-285"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.3333,
+        "id_f1": 0.1176,
+        "mrr": 1.0,
+        "recall_at_1": 0.3333,
+        "recall_at_5": 0.3333,
+        "recall_at_10": 0.3333,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 3,
+        "retrieved_gold_ids": [
+          "CVE-2026-22022"
+        ],
+        "missing_gold_ids": [
+          "CWE-285",
+          "S1166"
+        ],
+        "latency_seconds": 0.002
+      }
+    },
+    {
+      "id": "Q05",
+      "category": "exact_lookup",
+      "difficulty": "easy",
+      "question": "What is the Naikon threat group (G0019)?",
+      "gold_ids": [
+        "G0019",
+        "S0630",
+        "T1547.001",
+        "T1047"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1111,
+        "id_recall": 0.5,
+        "id_f1": 0.1818,
+        "mrr": 1.0,
+        "recall_at_1": 0.25,
+        "recall_at_5": 0.25,
+        "recall_at_10": 0.5,
+        "depth_cover": 3,
+        "retrieved_count": 18,
+        "gold_count": 4,
+        "retrieved_gold_ids": [
+          "G0019",
+          "T1547.001"
+        ],
+        "missing_gold_ids": [
+          "S0630",
+          "T1047"
+        ],
+        "latency_seconds": 0.057
+      }
+    },
+    {
+      "id": "Q06",
+      "category": "attack_relationships",
+      "difficulty": "easy",
+      "question": "What ATT&CK tactic does T1071 (Application Layer Protocol) belong to?",
+      "gold_ids": [
+        "T1071",
+        "TA0011"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1429,
+        "id_recall": 1.0,
+        "id_f1": 0.25,
+        "mrr": 1.0,
+        "recall_at_1": 0.5,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.5,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 2,
+        "retrieved_gold_ids": [
+          "T1071",
+          "TA0011"
+        ],
+        "missing_gold_ids": [],
+        "latency_seconds": 0.004
+      }
+    },
+    {
+      "id": "Q07",
+      "category": "attack_relationships",
+      "difficulty": "easy",
+      "question": "What parent technique does T1071.001 (Web Protocols) belong to?",
+      "gold_ids": [
+        "T1071.001",
+        "T1071",
+        "TA0011"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 1.0,
+        "id_f1": 0.3529,
+        "mrr": 1.0,
+        "recall_at_1": 0.3333,
+        "recall_at_5": 0.6667,
+        "recall_at_10": 0.6667,
+        "depth_cover": 2,
+        "retrieved_count": 14,
+        "gold_count": 3,
+        "retrieved_gold_ids": [
+          "T1071",
+          "T1071.001",
+          "TA0011"
+        ],
+        "missing_gold_ids": [],
+        "latency_seconds": 0.018
+      }
+    },
+    {
+      "id": "Q08",
+      "category": "attack_relationships",
+      "difficulty": "medium",
+      "question": "Which ATT&CK tactics does T1055 (Process Injection) belong to?",
+      "gold_ids": [
+        "T1055",
+        "TA0005",
+        "TA0004",
+        "M1026",
+        "M1040"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.6,
+        "id_f1": 0.3158,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.2,
+        "recall_at_10": 0.2,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "T1055",
+          "TA0004",
+          "TA0005"
+        ],
+        "missing_gold_ids": [
+          "M1026",
+          "M1040"
+        ],
+        "latency_seconds": 0.009
+      }
+    },
+    {
+      "id": "Q09",
+      "category": "attack_relationships",
+      "difficulty": "medium",
+      "question": "Which mitigations apply to T1190 (Exploit Public-Facing Application)?",
+      "gold_ids": [
+        "T1190",
+        "M1048",
+        "M1037",
+        "M1030",
+        "M1016",
+        "M1026",
+        "M1050",
+        "M1035",
+        "M1051"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.3571,
+        "id_recall": 0.5556,
+        "id_f1": 0.4348,
+        "mrr": 1.0,
+        "recall_at_1": 0.1111,
+        "recall_at_5": 0.1111,
+        "recall_at_10": 0.4444,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 9,
+        "retrieved_gold_ids": [
+          "M1016",
+          "M1030",
+          "M1037",
+          "M1051",
+          "T1190"
+        ],
+        "missing_gold_ids": [
+          "M1026",
+          "M1035",
+          "M1048",
+          "M1050"
+        ],
+        "latency_seconds": 0.009
+      }
+    },
+    {
+      "id": "Q10",
+      "category": "attack_relationships",
+      "difficulty": "medium",
+      "question": "Which sub-techniques of T1059 (Command and Scripting Interpreter) are present in the graph?",
+      "gold_ids": [
+        "T1059",
+        "T1059.001",
+        "T1059.002",
+        "T1059.003",
+        "T1059.004",
+        "T1059.005",
+        "T1059.006",
+        "T1059.007",
+        "TA0002"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2857,
+        "id_recall": 0.4444,
+        "id_f1": 0.3478,
+        "mrr": 1.0,
+        "recall_at_1": 0.1111,
+        "recall_at_5": 0.4444,
+        "recall_at_10": 0.4444,
+        "depth_cover": 2,
+        "retrieved_count": 14,
+        "gold_count": 9,
+        "retrieved_gold_ids": [
+          "T1059",
+          "T1059.002",
+          "T1059.006",
+          "T1059.007"
+        ],
+        "missing_gold_ids": [
+          "T1059.001",
+          "T1059.003",
+          "T1059.004",
+          "T1059.005",
+          "TA0002"
+        ],
+        "latency_seconds": 0.008
+      }
+    },
+    {
+      "id": "Q11",
+      "category": "attack_relationships",
+      "difficulty": "easy",
+      "question": "Which mitigations apply to T1027 (Obfuscated Files or Information)?",
+      "gold_ids": [
+        "T1027",
+        "M1047",
+        "M1040",
+        "M1017",
+        "M1049"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.6,
+        "id_f1": 0.3158,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.2,
+        "recall_at_10": 0.2,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "M1040",
+          "M1049",
+          "T1027"
+        ],
+        "missing_gold_ids": [
+          "M1017",
+          "M1047"
+        ],
+        "latency_seconds": 0.012
+      }
+    },
+    {
+      "id": "Q12",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "Which ATT&CK techniques are linked to CVE-2026-25760 via bridge edges in the graph?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "S0633",
+        "T1027",
+        "T1055",
+        "T1083",
+        "T1105",
+        "T1071",
+        "T1071.001",
+        "T1059.001",
+        "T1003.001",
+        "T1134",
+        "T1573.001",
+        "T1573.002"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.2308,
+        "id_f1": 0.2222,
+        "mrr": 1.0,
+        "recall_at_1": 0.0769,
+        "recall_at_5": 0.1538,
+        "recall_at_10": 0.1538,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 13,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "T1083",
+          "T1105"
+        ],
+        "missing_gold_ids": [
+          "S0633",
+          "T1003.001",
+          "T1027",
+          "T1055",
+          "T1059.001",
+          "T1071",
+          "T1071.001",
+          "T1134",
+          "T1573.001",
+          "T1573.002"
+        ],
+        "latency_seconds": 0.015
+      }
+    },
+    {
+      "id": "Q13",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "Which ATT&CK techniques are linked to CVE-2026-22184 (a zlib buffer overflow) via bridge edges?",
+      "gold_ids": [
+        "CVE-2026-22184",
+        "S0086",
+        "T1105",
+        "T1082",
+        "T1560.002",
+        "T1543.003",
+        "T1083",
+        "T1059.003",
+        "T1041",
+        "T1071.001",
+        "T1036.005"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.5,
+        "id_recall": 0.6364,
+        "id_f1": 0.56,
+        "mrr": 1.0,
+        "recall_at_1": 0.0909,
+        "recall_at_5": 0.3636,
+        "recall_at_10": 0.5455,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 11,
+        "retrieved_gold_ids": [
+          "CVE-2026-22184",
+          "S0086",
+          "T1059.003",
+          "T1082",
+          "T1105",
+          "T1543.003",
+          "T1560.002"
+        ],
+        "missing_gold_ids": [
+          "T1036.005",
+          "T1041",
+          "T1071.001",
+          "T1083"
+        ],
+        "latency_seconds": 0.008
+      }
+    },
+    {
+      "id": "Q14",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "Which software does CVE-2026-25793 (a Nebula networking tool vulnerability) link to, and what ATT&CK techniques does that software use?",
+      "gold_ids": [
+        "CVE-2026-25793",
+        "S0630",
+        "T1105",
+        "T1095",
+        "T1547.001",
+        "T1005",
+        "T1573.001",
+        "T1083"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.375,
+        "id_f1": 0.2727,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.25,
+        "recall_at_10": 0.25,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "CVE-2026-25793",
+          "T1083",
+          "T1105"
+        ],
+        "missing_gold_ids": [
+          "S0630",
+          "T1005",
+          "T1095",
+          "T1547.001",
+          "T1573.001"
+        ],
+        "latency_seconds": 0.012
+      }
+    },
+    {
+      "id": "Q15",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "Which CVEs in the graph are linked to the ZLib software (S0086) via bridge edges?",
+      "gold_ids": [
+        "S0086",
+        "CVE-2026-22184",
+        "CVE-2026-27171"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 1.0,
+        "id_f1": 0.3529,
+        "mrr": 1.0,
+        "recall_at_1": 0.3333,
+        "recall_at_5": 0.3333,
+        "recall_at_10": 1.0,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 3,
+        "retrieved_gold_ids": [
+          "CVE-2026-22184",
+          "CVE-2026-27171",
+          "S0086"
+        ],
+        "missing_gold_ids": [],
+        "latency_seconds": 0.009
+      }
+    },
+    {
+      "id": "Q16",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "CVE-2026-22022 (Apache Solr authorization bypass) links to T1053.005 via a bridge edge. What is that technique and which tactics does it cover?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "T1053.005",
+        "T1053",
+        "TA0002",
+        "TA0003",
+        "TA0004",
+        "M1026",
+        "M1047"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1429,
+        "id_recall": 0.25,
+        "id_f1": 0.1818,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.25,
+        "recall_at_10": 0.25,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "CVE-2026-22022",
+          "T1053.005"
+        ],
+        "missing_gold_ids": [
+          "M1026",
+          "M1047",
+          "T1053",
+          "TA0002",
+          "TA0003",
+          "TA0004"
+        ],
+        "latency_seconds": 0.016
+      }
+    },
+    {
+      "id": "Q17",
+      "category": "cross_domain",
+      "difficulty": "hard",
+      "question": "What ATT&CK techniques are shared between CVE-2026-22184 and CVE-2026-27171, and why do they share them?",
+      "gold_ids": [
+        "CVE-2026-22184",
+        "CVE-2026-27171",
+        "S0086",
+        "T1105",
+        "T1082",
+        "T1083",
+        "T1041",
+        "T1059.003"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.3571,
+        "id_recall": 0.625,
+        "id_f1": 0.4545,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.25,
+        "recall_at_10": 0.5,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "CVE-2026-22184",
+          "CVE-2026-27171",
+          "T1082",
+          "T1083",
+          "T1105"
+        ],
+        "missing_gold_ids": [
+          "S0086",
+          "T1041",
+          "T1059.003"
+        ],
+        "latency_seconds": 0.003
+      }
+    },
+    {
+      "id": "Q18",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "Which software does CVE-2026-22022 link to via the bridge graph, and which threat group is known to use that software?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "S1166",
+        "G0049",
+        "C0042"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1667,
+        "id_recall": 0.75,
+        "id_f1": 0.2727,
+        "mrr": 1.0,
+        "recall_at_1": 0.25,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.5,
+        "depth_cover": 3,
+        "retrieved_count": 18,
+        "gold_count": 4,
+        "retrieved_gold_ids": [
+          "CVE-2026-22022",
+          "G0049",
+          "S1166"
+        ],
+        "missing_gold_ids": [
+          "C0042"
+        ],
+        "latency_seconds": 0.008
+      }
+    },
+    {
+      "id": "Q19",
+      "category": "cross_domain",
+      "difficulty": "medium",
+      "question": "Which defense evasion techniques does CVE-2026-25760 link to via bridge edges in the graph?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "S0633",
+        "T1027",
+        "T1027.004",
+        "T1027.013",
+        "T1055",
+        "T1134",
+        "T1548.002",
+        "TA0005"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2857,
+        "id_recall": 0.4444,
+        "id_f1": 0.3478,
+        "mrr": 1.0,
+        "recall_at_1": 0.1111,
+        "recall_at_5": 0.1111,
+        "recall_at_10": 0.2222,
+        "depth_cover": 2,
+        "retrieved_count": 14,
+        "gold_count": 9,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "T1027",
+          "T1027.004",
+          "TA0005"
+        ],
+        "missing_gold_ids": [
+          "S0633",
+          "T1027.013",
+          "T1055",
+          "T1134",
+          "T1548.002"
+        ],
+        "latency_seconds": 0.004
+      }
+    },
+    {
+      "id": "Q20",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Which threat groups are connected to CVE-2026-25760 through the bridge graph, and what is the full reasoning path?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "S0633",
+        "G0016",
+        "G1021",
+        "G0127",
+        "C0018"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0556,
+        "id_recall": 0.1667,
+        "id_f1": 0.0833,
+        "mrr": 1.0,
+        "recall_at_1": 0.1667,
+        "recall_at_5": 0.1667,
+        "recall_at_10": 0.1667,
+        "depth_cover": 0,
+        "retrieved_count": 18,
+        "gold_count": 6,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760"
+        ],
+        "missing_gold_ids": [
+          "C0018",
+          "G0016",
+          "G0127",
+          "G1021",
+          "S0633"
+        ],
+        "latency_seconds": 0.024
+      }
+    },
+    {
+      "id": "Q21",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Which threat group is connected to CVE-2026-25793 through the Nebulae software, and what techniques does that group use?",
+      "gold_ids": [
+        "CVE-2026-25793",
+        "S0630",
+        "G0019",
+        "T1547.001",
+        "T1047",
+        "T1078.002",
+        "T1053.005"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1667,
+        "id_recall": 0.4286,
+        "id_f1": 0.24,
+        "mrr": 1.0,
+        "recall_at_1": 0.1429,
+        "recall_at_5": 0.1429,
+        "recall_at_10": 0.2857,
+        "depth_cover": 3,
+        "retrieved_count": 18,
+        "gold_count": 7,
+        "retrieved_gold_ids": [
+          "CVE-2026-25793",
+          "T1078.002",
+          "T1547.001"
+        ],
+        "missing_gold_ids": [
+          "G0019",
+          "S0630",
+          "T1047",
+          "T1053.005"
+        ],
+        "latency_seconds": 0.02
+      }
+    },
+    {
+      "id": "Q22",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Which threat group is connected to CVE-2026-22022 and CVE-2026-22444 through the Solar backdoor, and what campaign did they run?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "CVE-2026-22444",
+        "S1166",
+        "G0049",
+        "C0042",
+        "C0044"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1667,
+        "id_recall": 0.5,
+        "id_f1": 0.25,
+        "mrr": 1.0,
+        "recall_at_1": 0.1667,
+        "recall_at_5": 0.3333,
+        "recall_at_10": 0.3333,
+        "depth_cover": 3,
+        "retrieved_count": 18,
+        "gold_count": 6,
+        "retrieved_gold_ids": [
+          "CVE-2026-22022",
+          "CVE-2026-22444",
+          "S1166"
+        ],
+        "missing_gold_ids": [
+          "C0042",
+          "C0044",
+          "G0049"
+        ],
+        "latency_seconds": 0.007
+      }
+    },
+    {
+      "id": "Q23",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Following the chain CVE-2026-25760 → Sliver (S0633) → APT29 (G0016), which credential access techniques does APT29 use in the graph?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "S0633",
+        "G0016",
+        "T1003.002",
+        "T1003.004",
+        "T1528",
+        "T1621",
+        "TA0006"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2222,
+        "id_recall": 0.5,
+        "id_f1": 0.3077,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.375,
+        "recall_at_10": 0.375,
+        "depth_cover": 3,
+        "retrieved_count": 18,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "G0016",
+          "S0633",
+          "T1528"
+        ],
+        "missing_gold_ids": [
+          "T1003.002",
+          "T1003.004",
+          "T1621",
+          "TA0006"
+        ],
+        "latency_seconds": 0.037
+      }
+    },
+    {
+      "id": "Q24",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Which mitigations apply to the process injection technique linked to CVE-2026-25760?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "T1055",
+        "M1026",
+        "M1040"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.75,
+        "id_f1": 0.3333,
+        "mrr": 1.0,
+        "recall_at_1": 0.25,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.75,
+        "depth_cover": 2,
+        "retrieved_count": 14,
+        "gold_count": 4,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "M1040",
+          "T1055"
+        ],
+        "missing_gold_ids": [
+          "M1026"
+        ],
+        "latency_seconds": 0.004
+      }
+    },
+    {
+      "id": "Q25",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "Which ATT&CK tactic categories cover the techniques that CVE-2026-22022 links to via bridge edges?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "T1053.005",
+        "T1105",
+        "T1020",
+        "T1041",
+        "T1082",
+        "T1070.004",
+        "T1573.001",
+        "TA0002",
+        "TA0003",
+        "TA0005",
+        "TA0007",
+        "TA0010",
+        "TA0011"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.7143,
+        "id_recall": 0.7143,
+        "id_f1": 0.7143,
+        "mrr": 1.0,
+        "recall_at_1": 0.0714,
+        "recall_at_5": 0.2143,
+        "recall_at_10": 0.4286,
+        "depth_cover": 2,
+        "retrieved_count": 14,
+        "gold_count": 14,
+        "retrieved_gold_ids": [
+          "CVE-2026-22022",
+          "T1020",
+          "T1041",
+          "T1053.005",
+          "T1070.004",
+          "T1082",
+          "T1105",
+          "T1573.001",
+          "TA0010",
+          "TA0011"
+        ],
+        "missing_gold_ids": [
+          "TA0002",
+          "TA0003",
+          "TA0005",
+          "TA0007"
+        ],
+        "latency_seconds": 0.002
+      }
+    },
+    {
+      "id": "Q26",
+      "category": "multi_hop",
+      "difficulty": "hard",
+      "question": "CVE-2026-25793 links to Nebulae (S0630), used by Naikon (G0019). Which persistence techniques does Naikon use according to the graph?",
+      "gold_ids": [
+        "CVE-2026-25793",
+        "S0630",
+        "G0019",
+        "T1547.001",
+        "T1137.006",
+        "T1053.005",
+        "TA0003",
+        "TA0004"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2857,
+        "id_recall": 0.5,
+        "id_f1": 0.3636,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.375,
+        "recall_at_10": 0.375,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "CVE-2026-25793",
+          "G0019",
+          "S0630",
+          "T1547.001"
+        ],
+        "missing_gold_ids": [
+          "T1053.005",
+          "T1137.006",
+          "TA0003",
+          "TA0004"
+        ],
+        "latency_seconds": 0.021
+      }
+    },
+    {
+      "id": "Q27",
+      "category": "mixed_metadata",
+      "difficulty": "hard",
+      "question": "What is the CVSS severity and CWE of CVE-2026-22022, and which exfiltration technique does it link to via bridge edges?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "CWE-285",
+        "T1020",
+        "T1041",
+        "TA0010",
+        "S1166"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.5,
+        "id_f1": 0.3,
+        "mrr": 1.0,
+        "recall_at_1": 0.1667,
+        "recall_at_5": 0.1667,
+        "recall_at_10": 0.3333,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 6,
+        "retrieved_gold_ids": [
+          "CVE-2026-22022",
+          "T1020",
+          "T1041"
+        ],
+        "missing_gold_ids": [
+          "CWE-285",
+          "S1166",
+          "TA0010"
+        ],
+        "latency_seconds": 0.002
+      }
+    },
+    {
+      "id": "Q28",
+      "category": "mixed_metadata",
+      "difficulty": "hard",
+      "question": "Compare CVE-2026-22184 and CVE-2026-27171. Both affect zlib — how do they differ in severity, CWE, and attack surface?",
+      "gold_ids": [
+        "CVE-2026-22184",
+        "CVE-2026-27171",
+        "S0086",
+        "CWE-787",
+        "CWE-1284"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1429,
+        "id_recall": 0.4,
+        "id_f1": 0.2105,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.4,
+        "recall_at_10": 0.4,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "CVE-2026-22184",
+          "CVE-2026-27171"
+        ],
+        "missing_gold_ids": [
+          "CWE-1284",
+          "CWE-787",
+          "S0086"
+        ],
+        "latency_seconds": 0.003
+      }
+    },
+    {
+      "id": "Q29",
+      "category": "mixed_metadata",
+      "difficulty": "hard",
+      "question": "CVE-2026-22444 is a HIGH severity Apache Solr vulnerability with CWE-20. Which ATT&CK techniques does it link to, and which of those fall under the Execution tactic?",
+      "gold_ids": [
+        "CVE-2026-22444",
+        "CWE-20",
+        "S1166",
+        "T1053.005",
+        "T1105",
+        "T1020",
+        "T1041",
+        "T1082",
+        "TA0002"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.4286,
+        "id_recall": 0.6667,
+        "id_f1": 0.5217,
+        "mrr": 1.0,
+        "recall_at_1": 0.1111,
+        "recall_at_5": 0.1111,
+        "recall_at_10": 0.4444,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 9,
+        "retrieved_gold_ids": [
+          "CVE-2026-22444",
+          "T1020",
+          "T1041",
+          "T1053.005",
+          "T1082",
+          "T1105"
+        ],
+        "missing_gold_ids": [
+          "CWE-20",
+          "S1166",
+          "TA0002"
+        ],
+        "latency_seconds": 0.002
+      }
+    },
+    {
+      "id": "Q30",
+      "category": "mixed_metadata",
+      "difficulty": "hard",
+      "question": "For CVE-2026-25760 (Sliver C2), what is the CWE weakness type and CVSS severity, and which ATT&CK techniques linked via bridge edges fall under Defense Evasion (TA0005)?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "CWE-22",
+        "S0633",
+        "T1027",
+        "T1027.004",
+        "T1027.013",
+        "T1055",
+        "T1134",
+        "T1548.002",
+        "TA0005"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.3,
+        "id_f1": 0.25,
+        "mrr": 1.0,
+        "recall_at_1": 0.1,
+        "recall_at_5": 0.2,
+        "recall_at_10": 0.2,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 10,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "T1548.002",
+          "TA0005"
+        ],
+        "missing_gold_ids": [
+          "CWE-22",
+          "S0633",
+          "T1027",
+          "T1027.004",
+          "T1027.013",
+          "T1055",
+          "T1134"
+        ],
+        "latency_seconds": 0.032
+      }
+    },
+    {
+      "id": "Q31",
+      "category": "stress_negative",
+      "difficulty": "medium",
+      "question": "Which mitigations apply to T1113 (Screen Capture)?",
+      "gold_ids": [
+        "T1113",
+        "TA0009"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.5,
+        "id_f1": 0.125,
+        "mrr": 1.0,
+        "recall_at_1": 0.5,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.5,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 2,
+        "retrieved_gold_ids": [
+          "T1113"
+        ],
+        "missing_gold_ids": [
+          "TA0009"
+        ],
+        "latency_seconds": 0.01
+      }
+    },
+    {
+      "id": "Q32",
+      "category": "stress_negative",
+      "difficulty": "medium",
+      "question": "Does T1082 (System Information Discovery) have any mitigations in the graph?",
+      "gold_ids": [
+        "T1082",
+        "TA0007"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.5,
+        "id_f1": 0.125,
+        "mrr": 1.0,
+        "recall_at_1": 0.5,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.5,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 2,
+        "retrieved_gold_ids": [
+          "T1082"
+        ],
+        "missing_gold_ids": [
+          "TA0007"
+        ],
+        "latency_seconds": 0.018
+      }
+    },
+    {
+      "id": "Q33",
+      "category": "stress_multi_cve",
+      "difficulty": "hard",
+      "question": "Which bridge CVEs in the graph all link to T1105 (Ingress Tool Transfer)?",
+      "gold_ids": [
+        "T1105",
+        "CVE-2026-22184",
+        "CVE-2026-22022",
+        "CVE-2026-22444",
+        "CVE-2026-25760",
+        "CVE-2026-25793",
+        "CVE-2026-27171"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.0714,
+        "id_recall": 0.1429,
+        "id_f1": 0.0952,
+        "mrr": 1.0,
+        "recall_at_1": 0.1429,
+        "recall_at_5": 0.1429,
+        "recall_at_10": 0.1429,
+        "depth_cover": 0,
+        "retrieved_count": 14,
+        "gold_count": 7,
+        "retrieved_gold_ids": [
+          "T1105"
+        ],
+        "missing_gold_ids": [
+          "CVE-2026-22022",
+          "CVE-2026-22184",
+          "CVE-2026-22444",
+          "CVE-2026-25760",
+          "CVE-2026-25793",
+          "CVE-2026-27171"
+        ],
+        "latency_seconds": 0.02
+      }
+    },
+    {
+      "id": "Q34",
+      "category": "stress_multi_tactic",
+      "difficulty": "hard",
+      "question": "Which ATT&CK tactics does T1556.003 (Pluggable Authentication Modules) belong to?",
+      "gold_ids": [
+        "T1556.003",
+        "T1556",
+        "TA0006",
+        "TA0005",
+        "TA0003"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2857,
+        "id_recall": 0.8,
+        "id_f1": 0.4211,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.2,
+        "recall_at_10": 0.2,
+        "depth_cover": 1,
+        "retrieved_count": 14,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "T1556.003",
+          "TA0003",
+          "TA0005",
+          "TA0006"
+        ],
+        "missing_gold_ids": [
+          "T1556"
+        ],
+        "latency_seconds": 0.002
+      }
+    },
+    {
+      "id": "Q35",
+      "category": "stress_depth3",
+      "difficulty": "hard",
+      "question": "CVE-2026-22022 links to Solar (S1166), which was used in the Outer Space campaign (C0042) by OilRig. Which techniques did that campaign use?",
+      "gold_ids": [
+        "CVE-2026-22022",
+        "S1166",
+        "C0042",
+        "G0049",
+        "T1105",
+        "T1071.001",
+        "T1027.013",
+        "T1059.005"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1667,
+        "id_recall": 0.375,
+        "id_f1": 0.2308,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.375,
+        "recall_at_10": 0.375,
+        "depth_cover": 0,
+        "retrieved_count": 18,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "C0042",
+          "CVE-2026-22022",
+          "S1166"
+        ],
+        "missing_gold_ids": [
+          "G0049",
+          "T1027.013",
+          "T1059.005",
+          "T1071.001",
+          "T1105"
+        ],
+        "latency_seconds": 0.014
+      }
+    },
+    {
+      "id": "Q36",
+      "category": "stress_intersection",
+      "difficulty": "hard",
+      "question": "Which ATT&CK techniques are linked to both CVE-2026-22184 and CVE-2026-25793 via bridge edges?",
+      "gold_ids": [
+        "CVE-2026-22184",
+        "CVE-2026-25793",
+        "T1105",
+        "T1543.003",
+        "T1036.005",
+        "T1059.003",
+        "T1083"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.4286,
+        "id_recall": 0.8571,
+        "id_f1": 0.5714,
+        "mrr": 1.0,
+        "recall_at_1": 0.1429,
+        "recall_at_5": 0.4286,
+        "recall_at_10": 0.7143,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 7,
+        "retrieved_gold_ids": [
+          "CVE-2026-22184",
+          "CVE-2026-25793",
+          "T1059.003",
+          "T1083",
+          "T1105",
+          "T1543.003"
+        ],
+        "missing_gold_ids": [
+          "T1036.005"
+        ],
+        "latency_seconds": 0.013
+      }
+    },
+    {
+      "id": "Q37",
+      "category": "stress_multi_tactic",
+      "difficulty": "hard",
+      "question": "Which ATT&CK tactics does T1574.007 (Path Interception by PATH Environment Variable) span, and what mitigations apply?",
+      "gold_ids": [
+        "T1574.007",
+        "T1574",
+        "TA0003",
+        "TA0004",
+        "TA0005",
+        "M1022",
+        "M1038",
+        "M1047"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.5,
+        "id_recall": 0.875,
+        "id_f1": 0.6364,
+        "mrr": 1.0,
+        "recall_at_1": 0.125,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.875,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 8,
+        "retrieved_gold_ids": [
+          "M1022",
+          "M1038",
+          "M1047",
+          "T1574.007",
+          "TA0003",
+          "TA0004",
+          "TA0005"
+        ],
+        "missing_gold_ids": [
+          "T1574"
+        ],
+        "latency_seconds": 0.01
+      }
+    },
+    {
+      "id": "Q38",
+      "category": "stress_overlap",
+      "difficulty": "hard",
+      "question": "Which ATT&CK techniques do both Cinnamon Tempest (G1021) and the Sliver software (S0633) use in the graph?",
+      "gold_ids": [
+        "G1021",
+        "S0633",
+        "T1059.001",
+        "T1105"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.2143,
+        "id_recall": 0.75,
+        "id_f1": 0.3333,
+        "mrr": 1.0,
+        "recall_at_1": 0.25,
+        "recall_at_5": 0.5,
+        "recall_at_10": 0.5,
+        "depth_cover": 2,
+        "retrieved_count": 14,
+        "gold_count": 4,
+        "retrieved_gold_ids": [
+          "G1021",
+          "S0633",
+          "T1059.001"
+        ],
+        "missing_gold_ids": [
+          "T1105"
+        ],
+        "latency_seconds": 0.007
+      }
+    },
+    {
+      "id": "Q39",
+      "category": "stress_pruning",
+      "difficulty": "hard",
+      "question": "Which techniques linked to CVE-2026-25760 via bridge edges have no mitigations in the graph?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "T1083",
+        "T1113",
+        "T1049",
+        "T1027.004"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1429,
+        "id_recall": 0.4,
+        "id_f1": 0.2105,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.2,
+        "recall_at_10": 0.2,
+        "depth_cover": 3,
+        "retrieved_count": 14,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "T1083"
+        ],
+        "missing_gold_ids": [
+          "T1027.004",
+          "T1049",
+          "T1113"
+        ],
+        "latency_seconds": 0.014
+      }
+    },
+    {
+      "id": "Q40",
+      "category": "stress_depth3",
+      "difficulty": "hard",
+      "question": "Which initial access techniques does Cinnamon Tempest (G1021) use, and how does this connect back to CVE-2026-25760?",
+      "gold_ids": [
+        "CVE-2026-25760",
+        "S0633",
+        "G1021",
+        "T1190",
+        "TA0001"
+      ],
+      "metrics": {
+        "hit_at_k": 1,
+        "id_precision": 0.1111,
+        "id_recall": 0.4,
+        "id_f1": 0.1739,
+        "mrr": 1.0,
+        "recall_at_1": 0.2,
+        "recall_at_5": 0.4,
+        "recall_at_10": 0.4,
+        "depth_cover": 0,
+        "retrieved_count": 18,
+        "gold_count": 5,
+        "retrieved_gold_ids": [
+          "CVE-2026-25760",
+          "G1021"
+        ],
+        "missing_gold_ids": [
+          "S0633",
+          "T1190",
+          "TA0001"
+        ],
+        "latency_seconds": 0.023
+      }
+    }
+  ]
+}

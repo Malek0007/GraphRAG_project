@@ -1,0 +1,103 @@
+{
+  "report_id": "mandiant_esxi_vib_persistence",
+  "source": "Google Cloud Threat Intelligence (Mandiant)",
+  "title": "ESXi Hypervisors Malware Persistence via VIBs",
+  "threat_actor": "UNC3886",
+  "nodes": [
+    {"id": "UNC3886", "type": "threat_actor"},
+    {"id": "VIRTUALPITA", "type": "malware"},
+    {"id": "VIRTUALPIE", "type": "malware"},
+    {"id": "VIRTUALGATE", "type": "malware"},
+    {"id": "ESXi Hypervisor", "type": "platform"},
+    {"id": "VMware VIB", "type": "artifact"},
+    {"id": "XML Descriptor", "type": "artifact"},
+    {"id": "vmtoolsd.exe", "type": "process"},
+    {"id": "cmd.exe", "type": "process"},
+    {"id": "PowerShell", "type": "process"},
+    {"id": "MiniDump", "type": "tool"},
+    {"id": "RC4", "type": "crypto"},
+    {"id": "Tor-like communication", "type": "c2"},
+    {"id": "Shared Memory", "type": "ipc"},
+    {"id": "Credential Dumping", "type": "behavior"},
+    {"id": "Persistence", "type": "behavior"},
+    {"id": "Lateral Movement", "type": "behavior"},
+    {"id": "Defense Evasion", "type": "behavior"},
+    {"id": "File Enumeration", "type": "behavior"}
+  ],
+  "edges": [
+    {"from": "UNC3886", "to": "VIRTUALPITA", "relation": "USES"},
+    {"from": "UNC3886", "to": "VIRTUALPIE", "relation": "USES"},
+    {"from": "UNC3886", "to": "VIRTUALGATE", "relation": "USES"},
+
+    {"from": "VIRTUALPITA", "to": "ESXi Hypervisor", "relation": "INFECTS"},
+    {"from": "VIRTUALPIE", "to": "ESXi Hypervisor", "relation": "INFECTS"},
+
+    {"from": "UNC3886", "to": "VMware VIB", "relation": "ABUSES_FOR_PERSISTENCE"},
+    {"from": "VMware VIB", "to": "XML Descriptor", "relation": "MODIFIES"},
+
+    {"from": "VIRTUALPITA", "to": "Persistence", "relation": "IMPLEMENTS"},
+    {"from": "VIRTUALPITA", "to": "Command Execution", "relation": "PERFORMS"},
+    {"from": "VIRTUALPITA", "to": "File Transfer", "relation": "PERFORMS"},
+
+    {"from": "VIRTUALPIE", "to": "RC4", "relation": "USES"},
+    {"from": "VIRTUALPIE", "to": "Command Execution", "relation": "PERFORMS"},
+
+    {"from": "VIRTUALGATE", "to": "Shared Memory", "relation": "USES"},
+    {"from": "VIRTUALGATE", "to": "Command Execution", "relation": "PERFORMS"},
+
+    {"from": "vmtoolsd.exe", "to": "cmd.exe", "relation": "SPAWNS"},
+    {"from": "cmd.exe", "to": "PowerShell", "relation": "SPAWNS"},
+
+    {"from": "UNC3886", "to": "Credential Dumping", "relation": "PERFORMS"},
+    {"from": "Credential Dumping", "to": "MiniDump", "relation": "USES"},
+
+    {"from": "UNC3886", "to": "Lateral Movement", "relation": "PERFORMS"},
+    {"from": "UNC3886", "to": "File Enumeration", "relation": "PERFORMS"},
+    {"from": "UNC3886", "to": "Defense Evasion", "relation": "PERFORMS"}
+  ],
+  "observables": [
+    {
+      "type": "process_chain",
+      "value": "vmtoolsd.exe → cmd.exe → PowerShell → rundll32.exe"
+    },
+    {
+      "type": "command",
+      "value": "cmd.exe /c dir /od /s /a"
+    },
+    {
+      "type": "command",
+      "value": "makecab compression"
+    },
+    {
+      "type": "command",
+      "value": "MiniDump credential extraction"
+    },
+    {
+      "type": "file_path",
+      "value": "C:\\Windows\\Temp\\*.tmp"
+    },
+    {
+      "type": "file_path",
+      "value": "/etc/rc.local.d/"
+    }
+  ],
+  "attack_techniques": [
+    "T1059",
+    "T1059.001",
+    "T1059.003",
+    "T1059.006",
+    "T1003",
+    "T1027",
+    "T1070",
+    "T1218.011",
+    "T1560",
+    "T1547"
+  ],
+  "evidence": [
+    "Attacker used malicious VIBs for persistence",
+    "Commands executed via vmtoolsd.exe across VMs",
+    "Credential dumping using MiniDump",
+    "Log tampering and cleanup observed",
+    "Cross-VM command execution via shared memory"
+  ]
+}

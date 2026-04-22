@@ -1,0 +1,4537 @@
+{
+  "meta": {
+    "name": "report_graph",
+    "description": "Threat intelligence report layer (Layer 4).",
+    "generated_at": "2026-04-22T03:06:36.214270Z",
+    "total_nodes": 192,
+    "total_edges": 326
+  },
+  "nodes": [
+    {
+      "id": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "type": "threat_report",
+      "name": "Raspberry Robin Malware Targets Telecom, Governments",
+      "description": "Raspberry Robin is a multi-stage malware campaign using infected USB-delivered LNK files to launch legitimate Windows utilities that retrieve MSI payloads, followed by heavy obfuscation, fake-payload anti-analysis behavior, persistence, privilege escalation via COM/UAC bypass, and Tor-based communications.",
+      "properties": {
+        "source": "Trend Micro",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "type": "malware",
+      "name": "Raspberry Robin",
+      "description": "Raspberry Robin",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Trend Micro",
+      "type": "organization",
+      "name": "Trend Micro",
+      "description": "Trend Micro",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "organization",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Red Canary",
+      "type": "organization",
+      "name": "Red Canary",
+      "description": "Red Canary",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "organization",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Telecommunications",
+      "type": "sector",
+      "name": "Telecommunications",
+      "description": "Telecommunications",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "sector",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Government",
+      "type": "sector",
+      "name": "Government",
+      "description": "Government",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "sector",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Latin America",
+      "type": "region",
+      "name": "Latin America",
+      "description": "Latin America",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "region",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Australia",
+      "type": "region",
+      "name": "Australia",
+      "description": "Australia",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "region",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Europe",
+      "type": "region",
+      "name": "Europe",
+      "description": "Europe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "region",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::USB",
+      "type": "artifact",
+      "name": "USB",
+      "description": "USB",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::.lnk file",
+      "type": "artifact",
+      "name": ".lnk file",
+      "description": ".lnk file",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::cmd.exe",
+      "type": "process",
+      "name": "cmd.exe",
+      "description": "cmd.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::msiexec.exe",
+      "type": "process",
+      "name": "msiexec.exe",
+      "description": "msiexec.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::wmic.exe",
+      "type": "process",
+      "name": "wmic.exe",
+      "description": "wmic.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::MSI package",
+      "type": "artifact",
+      "name": "MSI package",
+      "description": "MSI package",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Tor network",
+      "type": "infrastructure",
+      "name": "Tor network",
+      "description": "Tor network",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "infrastructure",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Tor client",
+      "type": "component",
+      "name": "Tor client",
+      "description": "Tor client",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "component",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Shared memory",
+      "type": "ipc",
+      "name": "Shared memory",
+      "description": "Shared memory",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "ipc",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Session 0",
+      "type": "concept",
+      "name": "Session 0",
+      "description": "Session 0",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "concept",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Privilege Escalation",
+      "type": "behavior",
+      "name": "Privilege Escalation",
+      "description": "Privilege Escalation",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Defense Evasion",
+      "type": "behavior",
+      "name": "Defense Evasion",
+      "description": "Defense Evasion",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Persistence",
+      "type": "behavior",
+      "name": "Persistence",
+      "description": "Persistence",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Command Execution",
+      "type": "behavior",
+      "name": "Command Execution",
+      "description": "Command Execution",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Registry RunOnce",
+      "type": "registry_key",
+      "name": "Registry RunOnce",
+      "description": "Registry RunOnce",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_key",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::Registry RunOnceEx",
+      "type": "registry_key",
+      "name": "Registry RunOnceEx",
+      "description": "Registry RunOnceEx",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_key",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::ICM Calibration DisplayCalibrator",
+      "type": "registry_key",
+      "name": "ICM Calibration DisplayCalibrator",
+      "description": "ICM Calibration DisplayCalibrator",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_key",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::CMLuaUtil",
+      "type": "com_object",
+      "name": "CMLuaUtil",
+      "description": "CMLuaUtil",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "com_object",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::ColorDataProxy",
+      "type": "com_object",
+      "name": "ColorDataProxy",
+      "description": "ColorDataProxy",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "com_object",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::DCCW.exe",
+      "type": "process",
+      "name": "DCCW.exe",
+      "description": "DCCW.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::ODBCCONF.EXE",
+      "type": "process",
+      "name": "ODBCCONF.EXE",
+      "description": "ODBCCONF.EXE",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::rundll32.exe",
+      "type": "process",
+      "name": "rundll32.exe",
+      "description": "rundll32.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::dllhost.exe",
+      "type": "process",
+      "name": "dllhost.exe",
+      "description": "dllhost.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::regsvr32.exe",
+      "type": "process",
+      "name": "regsvr32.exe",
+      "description": "regsvr32.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::BrowserAssistant",
+      "type": "payload",
+      "name": "BrowserAssistant",
+      "description": "BrowserAssistant",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "payload",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::RC4",
+      "type": "crypto_algo",
+      "name": "RC4",
+      "description": "RC4",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "crypto",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active",
+      "type": "registry_value",
+      "name": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active",
+      "description": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_value",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "type": "registry_key",
+      "name": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "description": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_key",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx",
+      "type": "registry_key",
+      "name": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx",
+      "description": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_key",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator",
+      "type": "registry_value",
+      "name": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator",
+      "description": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "registry_value",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "T1548",
+      "type": "technique",
+      "name": "T1548",
+      "description": "T1548",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "attack_technique",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::ucmDccwCOMMethod",
+      "type": "uac_bypass_method",
+      "name": "ucmDccwCOMMethod",
+      "description": "ucmDccwCOMMethod",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "uac_bypass_method",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::AutoElevate backdoor",
+      "type": "mechanism",
+      "name": "AutoElevate backdoor",
+      "description": "AutoElevate backdoor",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "mechanism",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::LockBit",
+      "type": "threat_group_or_family",
+      "name": "LockBit",
+      "description": "LockBit",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "trendmicro_raspberry_robin_2022_12_20",
+        "original_type": "threat_group_or_family",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::command_line_pattern::0",
+      "type": "observable",
+      "name": "command_line_pattern observable",
+      "description": "cmd.exe /c start msiexec {URL}",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "command_line_pattern",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::url_pattern::1",
+      "type": "observable",
+      "name": "url_pattern observable",
+      "description": "http://{domain}:8080/{random}/{computer_name}",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "url_pattern",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::url_pattern::2",
+      "type": "observable",
+      "name": "url_pattern observable",
+      "description": "http://{domain}:8080/{random}/{computer_name}={user_name}",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "url_pattern",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::url_pattern::3",
+      "type": "observable",
+      "name": "url_pattern observable",
+      "description": "http://{domain}:8080/{random}/{computer_name}?{user_name}",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "url_pattern",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::registry_value::4",
+      "type": "observable",
+      "name": "registry_value observable",
+      "description": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active = 1",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "registry_value",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::registry_value::5",
+      "type": "observable",
+      "name": "registry_value observable",
+      "description": "DisplayCalibrator = %User Temp%\\{random file name}.lnk",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "registry_value",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::process_name_options::6",
+      "type": "observable",
+      "name": "process_name_options observable",
+      "description": [
+        "dllhost.exe",
+        "regsvr32.exe",
+        "rundll32.exe"
+      ],
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "process_name_options",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "trendmicro_raspberry_robin_2022_12_20::OBS::sha256::7",
+      "type": "observable",
+      "name": "sha256 observable",
+      "description": "6fb0ad3f756b5d1f871cf34c3e4ea47cb34643cd17709a09c25076c400313adf",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "sha256",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "REPORT::mandiant_esxi_vib_persistence",
+      "type": "threat_report",
+      "name": "ESXi Hypervisors Malware Persistence via VIBs",
+      "description": "ESXi Hypervisors Malware Persistence via VIBs",
+      "properties": {
+        "source": "Google Cloud Threat Intelligence (Mandiant)",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::UNC3886",
+      "type": "threat_actor",
+      "name": "UNC3886",
+      "description": "UNC3886",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "threat_actor",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "type": "malware",
+      "name": "VIRTUALPITA",
+      "description": "VIRTUALPITA",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::VIRTUALPIE",
+      "type": "malware",
+      "name": "VIRTUALPIE",
+      "description": "VIRTUALPIE",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::VIRTUALGATE",
+      "type": "malware",
+      "name": "VIRTUALGATE",
+      "description": "VIRTUALGATE",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::ESXi Hypervisor",
+      "type": "platform",
+      "name": "ESXi Hypervisor",
+      "description": "ESXi Hypervisor",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "platform",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::VMware VIB",
+      "type": "artifact",
+      "name": "VMware VIB",
+      "description": "VMware VIB",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::XML Descriptor",
+      "type": "artifact",
+      "name": "XML Descriptor",
+      "description": "XML Descriptor",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::vmtoolsd.exe",
+      "type": "process",
+      "name": "vmtoolsd.exe",
+      "description": "vmtoolsd.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::cmd.exe",
+      "type": "process",
+      "name": "cmd.exe",
+      "description": "cmd.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::PowerShell",
+      "type": "process",
+      "name": "PowerShell",
+      "description": "PowerShell",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::MiniDump",
+      "type": "tool",
+      "name": "MiniDump",
+      "description": "MiniDump",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "tool",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::RC4",
+      "type": "crypto_algo",
+      "name": "RC4",
+      "description": "RC4",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "crypto",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::Tor-like communication",
+      "type": "c2_infra",
+      "name": "Tor-like communication",
+      "description": "Tor-like communication",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "c2",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::Shared Memory",
+      "type": "ipc",
+      "name": "Shared Memory",
+      "description": "Shared Memory",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "ipc",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::Credential Dumping",
+      "type": "behavior",
+      "name": "Credential Dumping",
+      "description": "Credential Dumping",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::Persistence",
+      "type": "behavior",
+      "name": "Persistence",
+      "description": "Persistence",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::Lateral Movement",
+      "type": "behavior",
+      "name": "Lateral Movement",
+      "description": "Lateral Movement",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::Defense Evasion",
+      "type": "behavior",
+      "name": "Defense Evasion",
+      "description": "Defense Evasion",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::File Enumeration",
+      "type": "behavior",
+      "name": "File Enumeration",
+      "description": "File Enumeration",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "mandiant_esxi_vib_persistence",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::OBS::process_chain::0",
+      "type": "observable",
+      "name": "process_chain observable",
+      "description": "vmtoolsd.exe → cmd.exe → PowerShell → rundll32.exe",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "process_chain",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::OBS::command::1",
+      "type": "observable",
+      "name": "command observable",
+      "description": "cmd.exe /c dir /od /s /a",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "command",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::OBS::command::2",
+      "type": "observable",
+      "name": "command observable",
+      "description": "makecab compression",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "command",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::OBS::command::3",
+      "type": "observable",
+      "name": "command observable",
+      "description": "MiniDump credential extraction",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "command",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::OBS::file_path::4",
+      "type": "observable",
+      "name": "file_path observable",
+      "description": "C:\\Windows\\Temp\\*.tmp",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "file_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "mandiant_esxi_vib_persistence::OBS::file_path::5",
+      "type": "observable",
+      "name": "file_path observable",
+      "description": "/etc/rc.local.d/",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "file_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "REPORT::eset_keydnap_osx",
+      "type": "threat_report",
+      "name": "OSX/Keydnap Malware Credential Theft",
+      "description": "OSX/Keydnap Malware Credential Theft",
+      "properties": {
+        "source": "ESET Research",
+        "report_id": "eset_keydnap_osx",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::OSX/Keydnap",
+      "type": "malware",
+      "name": "OSX/Keydnap",
+      "description": "OSX/Keydnap",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::macOS",
+      "type": "platform",
+      "name": "macOS",
+      "description": "macOS",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "platform",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Keychain",
+      "type": "credential_store",
+      "name": "Keychain",
+      "description": "Keychain",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "credential_store",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::LaunchAgents",
+      "type": "persistence_mechanism",
+      "name": "LaunchAgents",
+      "description": "LaunchAgents",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "persistence_mechanism",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Tor2Web",
+      "type": "infrastructure",
+      "name": "Tor2Web",
+      "description": "Tor2Web",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "infrastructure",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Downloader",
+      "type": "component",
+      "name": "Downloader",
+      "description": "Downloader",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "component",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Backdoor",
+      "type": "component",
+      "name": "Backdoor",
+      "description": "Backdoor",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "component",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Mach-O executable",
+      "type": "file_type",
+      "name": "Mach-O executable",
+      "description": "Mach-O executable",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "file_type",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Terminal",
+      "type": "process",
+      "name": "Terminal",
+      "description": "Terminal",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Finder",
+      "type": "process",
+      "name": "Finder",
+      "description": "Finder",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Privilege Escalation Prompt",
+      "type": "artifact",
+      "name": "Privilege Escalation Prompt",
+      "description": "Privilege Escalation Prompt",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::RC4",
+      "type": "crypto_algo",
+      "name": "RC4",
+      "description": "RC4",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "crypto",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Credential Dumping",
+      "type": "behavior",
+      "name": "Credential Dumping",
+      "description": "Credential Dumping",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Persistence",
+      "type": "behavior",
+      "name": "Persistence",
+      "description": "Persistence",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Defense Evasion",
+      "type": "behavior",
+      "name": "Defense Evasion",
+      "description": "Defense Evasion",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::Command Execution",
+      "type": "behavior",
+      "name": "Command Execution",
+      "description": "Command Execution",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "eset_keydnap_osx",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::OBS::file_pattern::0",
+      "type": "observable",
+      "name": "file_pattern observable",
+      "description": ".jpg (with trailing space) executed as Mach-O",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "file_pattern",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::OBS::directory::1",
+      "type": "observable",
+      "name": "directory observable",
+      "description": "/Library/LaunchAgents/",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "directory",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::OBS::process::2",
+      "type": "observable",
+      "name": "process observable",
+      "description": "/usr/libexec/icloudsyncd",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::OBS::command_pattern::3",
+      "type": "observable",
+      "name": "command_pattern observable",
+      "description": "/api/osx/keychain",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "command_pattern",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "eset_keydnap_osx::OBS::network::4",
+      "type": "observable",
+      "name": "network observable",
+      "description": "*.onion.to (Tor2Web proxy)",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "network",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "REPORT::cisa_applejeus_lazarus",
+      "type": "threat_report",
+      "name": "cisa_applejeus_lazarus",
+      "description": "cisa_applejeus_lazarus",
+      "properties": {
+        "source": "CISA Advisory AA21-048A",
+        "report_id": "cisa_applejeus_lazarus",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Lazarus Group",
+      "type": "threat_actor",
+      "name": "Lazarus Group",
+      "description": "Lazarus Group",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "threat_actor",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::AppleJeus",
+      "type": "malware",
+      "name": "AppleJeus",
+      "description": "AppleJeus",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "malware_campaign",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::FALLCHILL",
+      "type": "malware",
+      "name": "FALLCHILL",
+      "description": "FALLCHILL",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Cryptocurrency Exchange",
+      "type": "target_sector",
+      "name": "Cryptocurrency Exchange",
+      "description": "Cryptocurrency Exchange",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "target",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Financial Services",
+      "type": "target_sector",
+      "name": "Financial Services",
+      "description": "Financial Services",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "target",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Phishing",
+      "type": "attack_vector",
+      "name": "Phishing",
+      "description": "Phishing",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "attack_vector",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Trojanized Trading App",
+      "type": "artifact",
+      "name": "Trojanized Trading App",
+      "description": "Trojanized Trading App",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::MSI Installer",
+      "type": "artifact",
+      "name": "MSI Installer",
+      "description": "MSI Installer",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::DMG Installer",
+      "type": "artifact",
+      "name": "DMG Installer",
+      "description": "DMG Installer",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Updater.exe",
+      "type": "process",
+      "name": "Updater.exe",
+      "description": "Updater.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::CrashReporter.exe",
+      "type": "process",
+      "name": "CrashReporter.exe",
+      "description": "CrashReporter.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::LaunchDaemon",
+      "type": "persistence_mechanism",
+      "name": "LaunchDaemon",
+      "description": "LaunchDaemon",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "persistence",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Scheduled Task",
+      "type": "persistence_mechanism",
+      "name": "Scheduled Task",
+      "description": "Scheduled Task",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "persistence",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::C2 Server",
+      "type": "infrastructure",
+      "name": "C2 Server",
+      "description": "C2 Server",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "infrastructure",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::XOR Encryption",
+      "type": "crypto_algo",
+      "name": "XOR Encryption",
+      "description": "XOR Encryption",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "crypto",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::RC4 Encryption",
+      "type": "crypto_algo",
+      "name": "RC4 Encryption",
+      "description": "RC4 Encryption",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "crypto",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Credential Theft",
+      "type": "behavior",
+      "name": "Credential Theft",
+      "description": "Credential Theft",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Exfiltration",
+      "type": "behavior",
+      "name": "Exfiltration",
+      "description": "Exfiltration",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Privilege Escalation",
+      "type": "behavior",
+      "name": "Privilege Escalation",
+      "description": "Privilege Escalation",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::Defense Evasion",
+      "type": "behavior",
+      "name": "Defense Evasion",
+      "description": "Defense Evasion",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "cisa_applejeus_lazarus",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::OBS::domain::0",
+      "type": "observable",
+      "name": "domain observable",
+      "description": "celasllc.com",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "domain",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::OBS::domain::1",
+      "type": "observable",
+      "name": "domain observable",
+      "description": "jmttrading.org",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "domain",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::OBS::file_path::2",
+      "type": "observable",
+      "name": "file_path observable",
+      "description": "C:\\Program Files (x86)\\CelasTradePro\\",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "file_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::OBS::file_path::3",
+      "type": "observable",
+      "name": "file_path observable",
+      "description": "/Library/LaunchDaemons/",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "file_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "cisa_applejeus_lazarus::OBS::process::4",
+      "type": "observable",
+      "name": "process observable",
+      "description": "Updater.exe",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "REPORT::applejeus_full_campaign",
+      "type": "threat_report",
+      "name": "applejeus_full_campaign",
+      "description": "applejeus_full_campaign",
+      "properties": {
+        "source": "unknown",
+        "report_id": "applejeus_full_campaign",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Lazarus Group",
+      "type": "threat_actor",
+      "name": "Lazarus Group",
+      "description": "Lazarus Group",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "threat_actor",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::AppleJeus",
+      "type": "campaign",
+      "name": "AppleJeus",
+      "description": "AppleJeus",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "campaign",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Celas Trade Pro",
+      "type": "malware",
+      "name": "Celas Trade Pro",
+      "description": "Celas Trade Pro",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::JMT Trading",
+      "type": "malware",
+      "name": "JMT Trading",
+      "description": "JMT Trading",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Union Crypto",
+      "type": "malware",
+      "name": "Union Crypto",
+      "description": "Union Crypto",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Kupay Wallet",
+      "type": "malware",
+      "name": "Kupay Wallet",
+      "description": "Kupay Wallet",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::CoinGoTrade",
+      "type": "malware",
+      "name": "CoinGoTrade",
+      "description": "CoinGoTrade",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Dorusio",
+      "type": "malware",
+      "name": "Dorusio",
+      "description": "Dorusio",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Ants2Whale",
+      "type": "malware",
+      "name": "Ants2Whale",
+      "description": "Ants2Whale",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "malware_variant",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Updater.exe",
+      "type": "process",
+      "name": "Updater.exe",
+      "description": "Updater.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::CrashReporter.exe",
+      "type": "process",
+      "name": "CrashReporter.exe",
+      "description": "CrashReporter.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::UnionCryptoUpdater.exe",
+      "type": "process",
+      "name": "UnionCryptoUpdater.exe",
+      "description": "UnionCryptoUpdater.exe",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "process",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::LaunchDaemon",
+      "type": "persistence_mechanism",
+      "name": "LaunchDaemon",
+      "description": "LaunchDaemon",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "persistence",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Scheduled Task",
+      "type": "persistence_mechanism",
+      "name": "Scheduled Task",
+      "description": "Scheduled Task",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "persistence",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Windows Service",
+      "type": "persistence_mechanism",
+      "name": "Windows Service",
+      "description": "Windows Service",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "persistence",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Phishing Email",
+      "type": "initial_access",
+      "name": "Phishing Email",
+      "description": "Phishing Email",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "initial_access",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Trojanized App",
+      "type": "artifact",
+      "name": "Trojanized App",
+      "description": "Trojanized App",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::C2 Server",
+      "type": "infrastructure",
+      "name": "C2 Server",
+      "description": "C2 Server",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "infrastructure",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Credential Theft",
+      "type": "behavior",
+      "name": "Credential Theft",
+      "description": "Credential Theft",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Exfiltration",
+      "type": "behavior",
+      "name": "Exfiltration",
+      "description": "Exfiltration",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "applejeus_full_campaign::Privilege Escalation",
+      "type": "behavior",
+      "name": "Privilege Escalation",
+      "description": "Privilege Escalation",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "applejeus_full_campaign",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "type": "threat_report",
+      "name": "ScarCruft continues to evolve, introduces Bluetooth harvester",
+      "description": "ScarCruft used a multi-stage infection chain involving an initial dropper, UAC bypass, downloader, steganographic payload retrieval, and final deployment of ROKRAT, while also introducing a Bluetooth information harvester and overlapping victimology with DarkHotel and Konni.",
+      "properties": {
+        "source": "Kaspersky Securelist",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "type": "threat_actor",
+      "name": "ScarCruft",
+      "description": "ScarCruft",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "threat_actor",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "type": "malware",
+      "name": "ROKRAT",
+      "description": "ROKRAT",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Harvester",
+      "type": "malware",
+      "name": "Bluetooth Harvester",
+      "description": "Bluetooth Harvester",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "malware_module",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Initial Dropper",
+      "type": "component",
+      "name": "Initial Dropper",
+      "description": "Initial Dropper",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "component",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Installer",
+      "type": "component",
+      "name": "Installer",
+      "description": "Installer",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "component",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Downloader",
+      "type": "component",
+      "name": "Downloader",
+      "description": "Downloader",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "component",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Configuration File",
+      "type": "artifact",
+      "name": "Configuration File",
+      "description": "Configuration File",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Steganography",
+      "type": "technique",
+      "name": "Steganography",
+      "description": "Steganography",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "technique",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Image File with Appended Payload",
+      "type": "artifact",
+      "name": "Image File with Appended Payload",
+      "description": "Image File with Appended Payload",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "artifact",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::UAC Bypass",
+      "type": "behavior",
+      "name": "UAC Bypass",
+      "description": "UAC Bypass",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "CVE-2018-8120",
+      "type": "cve",
+      "name": "CVE-2018-8120",
+      "description": "CVE-2018-8120",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "vulnerability",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::UACME",
+      "type": "tool",
+      "name": "UACME",
+      "description": "UACME",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "tool_or_method",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Windows UAC",
+      "type": "security_feature",
+      "name": "Windows UAC",
+      "description": "Windows UAC",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "security_feature",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Box",
+      "type": "cloud_service",
+      "name": "Box",
+      "description": "Box",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_service",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Dropbox",
+      "type": "cloud_service",
+      "name": "Dropbox",
+      "description": "Dropbox",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_service",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Pcloud",
+      "type": "cloud_service",
+      "name": "Pcloud",
+      "description": "Pcloud",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_service",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Yandex",
+      "type": "cloud_service",
+      "name": "Yandex",
+      "description": "Yandex",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_service",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::/script",
+      "type": "cloud_path",
+      "name": "/script",
+      "description": "/script",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::/scriptout",
+      "type": "cloud_path",
+      "name": "/scriptout",
+      "description": "/scriptout",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::/english",
+      "type": "cloud_path",
+      "name": "/english",
+      "description": "/english",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::/video",
+      "type": "cloud_path",
+      "name": "/video",
+      "description": "/video",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::/scriptout path",
+      "type": "cloud_path",
+      "name": "/scriptout path",
+      "description": "/scriptout path",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "cloud_path",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Information Theft",
+      "type": "behavior",
+      "name": "Information Theft",
+      "description": "Information Theft",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Command Execution",
+      "type": "behavior",
+      "name": "Command Execution",
+      "description": "Command Execution",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Data Exfiltration",
+      "type": "behavior",
+      "name": "Data Exfiltration",
+      "description": "Data Exfiltration",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "behavior",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Device Information",
+      "type": "data_type",
+      "name": "Bluetooth Device Information",
+      "description": "Bluetooth Device Information",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "data_type",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Windows Bluetooth APIs",
+      "type": "api",
+      "name": "Windows Bluetooth APIs",
+      "description": "Windows Bluetooth APIs",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "api",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::DarkHotel",
+      "type": "threat_actor",
+      "name": "DarkHotel",
+      "description": "DarkHotel",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "threat_actor",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::GreezeBackdoor",
+      "type": "malware",
+      "name": "GreezeBackdoor",
+      "description": "GreezeBackdoor",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Konni",
+      "type": "malware",
+      "name": "Konni",
+      "description": "Konni",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "malware",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Vietnam Investment and Trading Companies",
+      "type": "target_group",
+      "name": "Vietnam Investment and Trading Companies",
+      "description": "Vietnam Investment and Trading Companies",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "target_group",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Russian Investment and Trading Companies",
+      "type": "target_group",
+      "name": "Russian Investment and Trading Companies",
+      "description": "Russian Investment and Trading Companies",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "target_group",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Diplomatic Agency in Hong Kong",
+      "type": "target_group",
+      "name": "Diplomatic Agency in Hong Kong",
+      "description": "Diplomatic Agency in Hong Kong",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "target_group",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::Diplomatic Agency in North Korea",
+      "type": "target_group",
+      "name": "Diplomatic Agency in North Korea",
+      "description": "Diplomatic Agency in North Korea",
+      "properties": {
+        "source": "threat_report",
+        "report_id": "securelist_scarcruft_bluetooth_harvester_2019",
+        "original_type": "target_group",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::behavior_chain::0",
+      "type": "observable",
+      "name": "behavior_chain observable",
+      "description": "initial dropper -> UAC bypass -> installer -> downloader -> steganographic image payload -> ROKRAT",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "behavior_chain",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::cloud_paths::1",
+      "type": "observable",
+      "name": "cloud_paths observable",
+      "description": [
+        "/script",
+        "/scriptout",
+        "/english",
+        "/video"
+      ],
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "cloud_paths",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::bluetooth_fields::2",
+      "type": "observable",
+      "name": "bluetooth_fields observable",
+      "description": [
+        "Instance Name",
+        "Address",
+        "Class",
+        "Connected",
+        "Authenticated",
+        "Remembered"
+      ],
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "bluetooth_fields",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::ioc_hash::3",
+      "type": "observable",
+      "name": "ioc_hash observable",
+      "description": "02681a7fe708f39beb7b3cf1bd557ee9",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "ioc_hash",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::ioc_hash::4",
+      "type": "observable",
+      "name": "ioc_hash observable",
+      "description": "e8b23cfc805353f55ed67cf0af58f305",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "ioc_hash",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::ioc_hash::5",
+      "type": "observable",
+      "name": "ioc_hash observable",
+      "description": "A76c4a79e6ff73bfd7149a49852e8916",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "ioc_hash",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::url::6",
+      "type": "observable",
+      "name": "url observable",
+      "description": "http://34.13.42[.]35/uploads/1.jpg",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "url",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::url::7",
+      "type": "observable",
+      "name": "url observable",
+      "description": "https://34.13.42[.]35/uploads/newmode.php",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "url",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::domain::8",
+      "type": "observable",
+      "name": "domain observable",
+      "description": "buttyfly.000webhostapp[.]com",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "domain",
+        "layer": "report"
+      }
+    },
+    {
+      "id": "securelist_scarcruft_bluetooth_harvester_2019::OBS::domain::9",
+      "type": "observable",
+      "name": "domain observable",
+      "description": "planar-progress.000webhostapp[.]com",
+      "properties": {
+        "source": "threat_report",
+        "obs_type": "domain",
+        "layer": "report"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Trend Micro",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Red Canary",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Telecommunications",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Government",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Latin America",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Australia",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Europe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::USB",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::.lnk file",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::cmd.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::msiexec.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::wmic.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::MSI package",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Tor network",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Tor client",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Shared memory",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Session 0",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Privilege Escalation",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Defense Evasion",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Persistence",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Command Execution",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Registry RunOnce",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Registry RunOnceEx",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ICM Calibration DisplayCalibrator",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::CMLuaUtil",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ColorDataProxy",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::DCCW.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ODBCCONF.EXE",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::rundll32.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::dllhost.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::regsvr32.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::BrowserAssistant",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::RC4",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "T1548",
+      "type": "mentions_technique",
+      "properties": {
+        "confidence": 1.0,
+        "layer_from": "report",
+        "layer_to": "attack"
+      }
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ucmDccwCOMMethod",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::AutoElevate backdoor",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::LockBit",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Telecommunications",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Government",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Latin America",
+      "type": "observed_in",
+      "properties": {
+        "original_relation": "OBSERVED_IN"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Australia",
+      "type": "observed_in",
+      "properties": {
+        "original_relation": "OBSERVED_IN"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Europe",
+      "type": "observed_in",
+      "properties": {
+        "original_relation": "OBSERVED_IN"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::USB",
+      "type": "spreads_via",
+      "properties": {
+        "original_relation": "SPREADS_VIA"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::.lnk file",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::.lnk file",
+      "target": "trendmicro_raspberry_robin_2022_12_20::cmd.exe",
+      "type": "executes",
+      "properties": {
+        "original_relation": "EXECUTES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::cmd.exe",
+      "target": "trendmicro_raspberry_robin_2022_12_20::msiexec.exe",
+      "type": "launches",
+      "properties": {
+        "original_relation": "LAUNCHES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::cmd.exe",
+      "target": "trendmicro_raspberry_robin_2022_12_20::wmic.exe",
+      "type": "alternative_launch",
+      "properties": {
+        "original_relation": "ALTERNATIVE_LAUNCH"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::msiexec.exe",
+      "target": "trendmicro_raspberry_robin_2022_12_20::MSI package",
+      "type": "downloads",
+      "properties": {
+        "original_relation": "DOWNLOADS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Defense Evasion",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Persistence",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Privilege Escalation",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Tor network",
+      "type": "connects_to",
+      "properties": {
+        "original_relation": "CONNECTS_TO"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Tor client",
+      "type": "embeds",
+      "properties": {
+        "original_relation": "EMBEDS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Shared memory",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::Session 0",
+      "type": "checks",
+      "properties": {
+        "original_relation": "CHECKS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Media\\Active",
+      "type": "reads_or_writes",
+      "properties": {
+        "original_relation": "READS_OR_WRITES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::RC4",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::BrowserAssistant",
+      "type": "drops",
+      "properties": {
+        "original_relation": "DROPS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "type": "modifies",
+      "properties": {
+        "original_relation": "MODIFIES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx",
+      "type": "modifies",
+      "properties": {
+        "original_relation": "MODIFIES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::rundll32.exe",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ODBCCONF.EXE",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::CMLuaUtil",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ColorDataProxy",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\DisplayCalibrator",
+      "type": "modifies",
+      "properties": {
+        "original_relation": "MODIFIES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::ColorDataProxy",
+      "target": "trendmicro_raspberry_robin_2022_12_20::DCCW.exe",
+      "type": "launches_via_calibration",
+      "properties": {
+        "original_relation": "LAUNCHES_VIA_CALIBRATION"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "T1548",
+      "type": "implements_technique",
+      "properties": {
+        "original_relation": "IMPLEMENTS"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::ucmDccwCOMMethod",
+      "type": "uses_variation_of",
+      "properties": {
+        "original_relation": "USES_VARIATION_OF"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::ucmDccwCOMMethod",
+      "target": "trendmicro_raspberry_robin_2022_12_20::AutoElevate backdoor",
+      "type": "abuses",
+      "properties": {
+        "original_relation": "ABUSES"
+      }
+    },
+    {
+      "source": "trendmicro_raspberry_robin_2022_12_20::Raspberry Robin",
+      "target": "trendmicro_raspberry_robin_2022_12_20::LockBit",
+      "type": "possible_technique_overlap",
+      "properties": {
+        "original_relation": "POSSIBLE_TECHNIQUE_OVERLAP"
+      }
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::command_line_pattern::0",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::url_pattern::1",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::url_pattern::2",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::url_pattern::3",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::registry_value::4",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::registry_value::5",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::process_name_options::6",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::trendmicro_raspberry_robin_2022_12_20",
+      "target": "trendmicro_raspberry_robin_2022_12_20::OBS::sha256::7",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::UNC3886",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::VIRTUALPIE",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::VIRTUALGATE",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::ESXi Hypervisor",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::VMware VIB",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::XML Descriptor",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::vmtoolsd.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::cmd.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::PowerShell",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::MiniDump",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::RC4",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::Tor-like communication",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::Shared Memory",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::Credential Dumping",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::Persistence",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::Lateral Movement",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::Defense Evasion",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::File Enumeration",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::VIRTUALPIE",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::VIRTUALGATE",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "target": "mandiant_esxi_vib_persistence::ESXi Hypervisor",
+      "type": "infects",
+      "properties": {
+        "original_relation": "INFECTS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPIE",
+      "target": "mandiant_esxi_vib_persistence::ESXi Hypervisor",
+      "type": "infects",
+      "properties": {
+        "original_relation": "INFECTS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::VMware VIB",
+      "type": "achieves_persistence",
+      "properties": {
+        "original_relation": "ABUSES_FOR_PERSISTENCE"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VMware VIB",
+      "target": "mandiant_esxi_vib_persistence::XML Descriptor",
+      "type": "modifies",
+      "properties": {
+        "original_relation": "MODIFIES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "target": "mandiant_esxi_vib_persistence::Persistence",
+      "type": "implements_technique",
+      "properties": {
+        "original_relation": "IMPLEMENTS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "target": "mandiant_esxi_vib_persistence::Command Execution",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPITA",
+      "target": "mandiant_esxi_vib_persistence::File Transfer",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPIE",
+      "target": "mandiant_esxi_vib_persistence::RC4",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALPIE",
+      "target": "mandiant_esxi_vib_persistence::Command Execution",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALGATE",
+      "target": "mandiant_esxi_vib_persistence::Shared Memory",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::VIRTUALGATE",
+      "target": "mandiant_esxi_vib_persistence::Command Execution",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::vmtoolsd.exe",
+      "target": "mandiant_esxi_vib_persistence::cmd.exe",
+      "type": "spawns",
+      "properties": {
+        "original_relation": "SPAWNS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::cmd.exe",
+      "target": "mandiant_esxi_vib_persistence::PowerShell",
+      "type": "spawns",
+      "properties": {
+        "original_relation": "SPAWNS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::Credential Dumping",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::Credential Dumping",
+      "target": "mandiant_esxi_vib_persistence::MiniDump",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::Lateral Movement",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::File Enumeration",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "mandiant_esxi_vib_persistence::UNC3886",
+      "target": "mandiant_esxi_vib_persistence::Defense Evasion",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::OBS::process_chain::0",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::OBS::command::1",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::OBS::command::2",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::OBS::command::3",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::OBS::file_path::4",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::mandiant_esxi_vib_persistence",
+      "target": "mandiant_esxi_vib_persistence::OBS::file_path::5",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::OSX/Keydnap",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::macOS",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Keychain",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::LaunchAgents",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Tor2Web",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Downloader",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Backdoor",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Mach-O executable",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Terminal",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Finder",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Privilege Escalation Prompt",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::RC4",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Credential Dumping",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Persistence",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Defense Evasion",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::Command Execution",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::macOS",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Credential Dumping",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Credential Dumping",
+      "target": "eset_keydnap_osx::Keychain",
+      "type": "extracts",
+      "properties": {
+        "original_relation": "EXTRACTS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Persistence",
+      "type": "implements_technique",
+      "properties": {
+        "original_relation": "IMPLEMENTS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Persistence",
+      "target": "eset_keydnap_osx::LaunchAgents",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Backdoor",
+      "type": "deploys",
+      "properties": {
+        "original_relation": "DEPLOYS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Backdoor",
+      "target": "eset_keydnap_osx::Tor2Web",
+      "type": "connects_to",
+      "properties": {
+        "original_relation": "CONNECTS_TO"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Downloader",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Downloader",
+      "target": "eset_keydnap_osx::Mach-O executable",
+      "type": "disguises_as",
+      "properties": {
+        "original_relation": "DISGUISES_AS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Mach-O executable",
+      "target": "eset_keydnap_osx::Finder",
+      "type": "tricks",
+      "properties": {
+        "original_relation": "TRICKS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Finder",
+      "target": "eset_keydnap_osx::Terminal",
+      "type": "executes",
+      "properties": {
+        "original_relation": "EXECUTES"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Privilege Escalation Prompt",
+      "type": "spoofs",
+      "properties": {
+        "original_relation": "SPOOFS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::Privilege Escalation Prompt",
+      "target": "eset_keydnap_osx::User Credentials",
+      "type": "steals",
+      "properties": {
+        "original_relation": "STEALS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::RC4",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Defense Evasion",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "eset_keydnap_osx::OSX/Keydnap",
+      "target": "eset_keydnap_osx::Command Execution",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::OBS::file_pattern::0",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::OBS::directory::1",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::OBS::process::2",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::OBS::command_pattern::3",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::eset_keydnap_osx",
+      "target": "eset_keydnap_osx::OBS::network::4",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Lazarus Group",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::AppleJeus",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::FALLCHILL",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Cryptocurrency Exchange",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Financial Services",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Phishing",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Trojanized Trading App",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::MSI Installer",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::DMG Installer",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Updater.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::CrashReporter.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::LaunchDaemon",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Scheduled Task",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::C2 Server",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::XOR Encryption",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::RC4 Encryption",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Credential Theft",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Exfiltration",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Privilege Escalation",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::Defense Evasion",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "cisa_applejeus_lazarus::Lazarus Group",
+      "target": "cisa_applejeus_lazarus::AppleJeus",
+      "type": "operates",
+      "properties": {
+        "original_relation": "OPERATES"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::FALLCHILL",
+      "type": "drops",
+      "properties": {
+        "original_relation": "DROPS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Cryptocurrency Exchange",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Financial Services",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Phishing",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::Phishing",
+      "target": "cisa_applejeus_lazarus::Trojanized Trading App",
+      "type": "delivers",
+      "properties": {
+        "original_relation": "DELIVERS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::Trojanized Trading App",
+      "target": "cisa_applejeus_lazarus::MSI Installer",
+      "type": "is_form_of",
+      "properties": {
+        "original_relation": "FORM"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::Trojanized Trading App",
+      "target": "cisa_applejeus_lazarus::DMG Installer",
+      "type": "is_form_of",
+      "properties": {
+        "original_relation": "FORM"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::MSI Installer",
+      "target": "cisa_applejeus_lazarus::Updater.exe",
+      "type": "executes",
+      "properties": {
+        "original_relation": "EXECUTES"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::Updater.exe",
+      "target": "cisa_applejeus_lazarus::C2 Server",
+      "type": "connects_to",
+      "properties": {
+        "original_relation": "COMMUNICATES_WITH"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::LaunchDaemon",
+      "type": "uses_for_persistence",
+      "properties": {
+        "original_relation": "USES_FOR_PERSISTENCE"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Scheduled Task",
+      "type": "uses_for_persistence",
+      "properties": {
+        "original_relation": "USES_FOR_PERSISTENCE"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Credential Theft",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Exfiltration",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::XOR Encryption",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::RC4 Encryption",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Privilege Escalation",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "cisa_applejeus_lazarus::AppleJeus",
+      "target": "cisa_applejeus_lazarus::Defense Evasion",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::OBS::domain::0",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::OBS::domain::1",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::OBS::file_path::2",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::OBS::file_path::3",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::cisa_applejeus_lazarus",
+      "target": "cisa_applejeus_lazarus::OBS::process::4",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Lazarus Group",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::AppleJeus",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Celas Trade Pro",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::JMT Trading",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Union Crypto",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Kupay Wallet",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::CoinGoTrade",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Dorusio",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Ants2Whale",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Updater.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::CrashReporter.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::UnionCryptoUpdater.exe",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::LaunchDaemon",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Scheduled Task",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Windows Service",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Phishing Email",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Trojanized App",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::C2 Server",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Credential Theft",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Exfiltration",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::applejeus_full_campaign",
+      "target": "applejeus_full_campaign::Privilege Escalation",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "applejeus_full_campaign::Lazarus Group",
+      "target": "applejeus_full_campaign::AppleJeus",
+      "type": "operates",
+      "properties": {
+        "original_relation": "OPERATES"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Celas Trade Pro",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::JMT Trading",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Union Crypto",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Kupay Wallet",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::CoinGoTrade",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Dorusio",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Ants2Whale",
+      "type": "has_variant",
+      "properties": {
+        "original_relation": "HAS_VARIANT"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::Phishing Email",
+      "target": "applejeus_full_campaign::Trojanized App",
+      "type": "delivers",
+      "properties": {
+        "original_relation": "DELIVERS"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::Trojanized App",
+      "target": "applejeus_full_campaign::Updater.exe",
+      "type": "executes",
+      "properties": {
+        "original_relation": "EXECUTES"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::Updater.exe",
+      "target": "applejeus_full_campaign::C2 Server",
+      "type": "exfiltrates_to",
+      "properties": {
+        "original_relation": "EXFILTRATES_TO"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::CrashReporter.exe",
+      "target": "applejeus_full_campaign::C2 Server",
+      "type": "exfiltrates_to",
+      "properties": {
+        "original_relation": "EXFILTRATES_TO"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::UnionCryptoUpdater.exe",
+      "target": "applejeus_full_campaign::C2 Server",
+      "type": "exfiltrates_to",
+      "properties": {
+        "original_relation": "EXFILTRATES_TO"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::LaunchDaemon",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Scheduled Task",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Windows Service",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Credential Theft",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Exfiltration",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "applejeus_full_campaign::AppleJeus",
+      "target": "applejeus_full_campaign::Privilege Escalation",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Harvester",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Initial Dropper",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Installer",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Downloader",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Configuration File",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Steganography",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Image File with Appended Payload",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::UAC Bypass",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "CVE-2018-8120",
+      "type": "mentions_cve",
+      "properties": {
+        "confidence": 1.0,
+        "layer_from": "report",
+        "layer_to": "vulnerability"
+      }
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::UACME",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Windows UAC",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Box",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Dropbox",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Pcloud",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Yandex",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/script",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/scriptout",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/english",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/video",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/scriptout path",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Information Theft",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Command Execution",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Data Exfiltration",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Device Information",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Windows Bluetooth APIs",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::DarkHotel",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::GreezeBackdoor",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Konni",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Vietnam Investment and Trading Companies",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Russian Investment and Trading Companies",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Diplomatic Agency in Hong Kong",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Diplomatic Agency in North Korea",
+      "type": "mentions_entity",
+      "properties": {}
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Initial Dropper",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Initial Dropper",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::UAC Bypass",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::UAC Bypass",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Windows UAC",
+      "type": "bypasses",
+      "properties": {
+        "original_relation": "BYPASSES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::UAC Bypass",
+      "target": "CVE-2018-8120",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::UAC Bypass",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::UACME",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Installer",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Downloader",
+      "type": "creates",
+      "properties": {
+        "original_relation": "CREATES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Installer",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Configuration File",
+      "type": "creates",
+      "properties": {
+        "original_relation": "CREATES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Downloader",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Configuration File",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Downloader",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Steganography",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Downloader",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Image File with Appended Payload",
+      "type": "downloads",
+      "properties": {
+        "original_relation": "DOWNLOADS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Image File with Appended Payload",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "type": "contains",
+      "properties": {
+        "original_relation": "CONTAINS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "type": "deploys",
+      "properties": {
+        "original_relation": "DEPLOYS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Information Theft",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Data Exfiltration",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Command Execution",
+      "type": "performs",
+      "properties": {
+        "original_relation": "PERFORMS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Box",
+      "type": "uses_cloud_service",
+      "properties": {
+        "original_relation": "USES_CLOUD_SERVICE"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Dropbox",
+      "type": "uses_cloud_service",
+      "properties": {
+        "original_relation": "USES_CLOUD_SERVICE"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Pcloud",
+      "type": "uses_cloud_service",
+      "properties": {
+        "original_relation": "USES_CLOUD_SERVICE"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Yandex",
+      "type": "uses_cloud_service",
+      "properties": {
+        "original_relation": "USES_CLOUD_SERVICE"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/script",
+      "type": "downloads_commands_from",
+      "properties": {
+        "original_relation": "DOWNLOADS_COMMANDS_FROM"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/scriptout",
+      "type": "uploads_results_to",
+      "properties": {
+        "original_relation": "UPLOADS_RESULTS_TO"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/english",
+      "type": "uses_directory",
+      "properties": {
+        "original_relation": "USES_DIRECTORY"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ROKRAT",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::/video",
+      "type": "uses_directory",
+      "properties": {
+        "original_relation": "USES_DIRECTORY"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Harvester",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Harvester",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Windows Bluetooth APIs",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Harvester",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Bluetooth Device Information",
+      "type": "collects",
+      "properties": {
+        "original_relation": "COLLECTS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Vietnam Investment and Trading Companies",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Russian Investment and Trading Companies",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Diplomatic Agency in Hong Kong",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Diplomatic Agency in North Korea",
+      "type": "targets",
+      "properties": {
+        "original_relation": "TARGETS"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::DarkHotel",
+      "type": "victimology_overlap_with",
+      "properties": {
+        "original_relation": "VICTIMOLOGY_OVERLAP_WITH"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::ScarCruft",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::Konni",
+      "type": "victimology_overlap_with",
+      "properties": {
+        "original_relation": "VICTIMOLOGY_OVERLAP_WITH"
+      }
+    },
+    {
+      "source": "securelist_scarcruft_bluetooth_harvester_2019::DarkHotel",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::GreezeBackdoor",
+      "type": "uses",
+      "properties": {
+        "original_relation": "USES"
+      }
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::behavior_chain::0",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::cloud_paths::1",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::bluetooth_fields::2",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::ioc_hash::3",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::ioc_hash::4",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::ioc_hash::5",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::url::6",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::url::7",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::domain::8",
+      "type": "has_observable",
+      "properties": {}
+    },
+    {
+      "source": "REPORT::securelist_scarcruft_bluetooth_harvester_2019",
+      "target": "securelist_scarcruft_bluetooth_harvester_2019::OBS::domain::9",
+      "type": "has_observable",
+      "properties": {}
+    }
+  ]
+}

@@ -1,14 +1,13 @@
 import json
 import os
 import numpy as np
-from openai import embeddings
 from sentence_transformers import SentenceTransformer
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-GRAPH_PATH = "data/graphrag/bridge_attack_vuln/global_graph.json"
-EMBEDDINGS_PATH = "data/graphrag/bridge_attack_vuln/embeddings.npy"
-METADATA_PATH = "data/graphrag/bridge_attack_vuln/embeddings_metadata.json"
+GRAPH_PATH = "data/graphrag/multi_layer/global_graph.json"
+EMBEDDINGS_PATH = "data/graphrag/multi_layer/embeddings.npy"
+METADATA_PATH = "data/graphrag/multi_layer/embeddings_metadata.json"
 
 
 
@@ -52,12 +51,14 @@ def build_edge_text(edge):
 
 
 def should_keep_node(node):
-    # Prototype-focused filter
     keep_types = {
-        "attack", "technique", "sub-technique",
-        "cve", "cvss", "cvss_vector"
+        "technique", "sub-technique", "cve", "cvss",
+        "software", "group", "campaign", "tactic", "mitigation",
+        "threat_report", "malware", "threat_actor",
+        "atomic_test", "observable",
     }
-    return node.get("type") in keep_types or str(node.get("id", "")).startswith("T")
+    node_id = str(node.get("id", ""))
+    return node.get("type") in keep_types or node_id.startswith("T")
 
 
 def should_keep_edge(edge):

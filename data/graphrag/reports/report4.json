@@ -1,0 +1,100 @@
+{
+  "report_id": "cisa_applejeus_lazarus",
+  "source": "CISA Advisory AA21-048A",
+  "threat_actor": "Lazarus Group",
+  "alias": "HIDDEN COBRA",
+  "campaign": "AppleJeus",
+  "nodes": [
+    {"id": "Lazarus Group", "type": "threat_actor"},
+    {"id": "AppleJeus", "type": "malware_campaign"},
+    {"id": "FALLCHILL", "type": "malware"},
+    {"id": "Cryptocurrency Exchange", "type": "target"},
+    {"id": "Financial Services", "type": "target"},
+    {"id": "Phishing", "type": "attack_vector"},
+    {"id": "Trojanized Trading App", "type": "artifact"},
+    {"id": "MSI Installer", "type": "artifact"},
+    {"id": "DMG Installer", "type": "artifact"},
+    {"id": "Updater.exe", "type": "process"},
+    {"id": "CrashReporter.exe", "type": "process"},
+    {"id": "LaunchDaemon", "type": "persistence"},
+    {"id": "Scheduled Task", "type": "persistence"},
+    {"id": "C2 Server", "type": "infrastructure"},
+    {"id": "XOR Encryption", "type": "crypto"},
+    {"id": "RC4 Encryption", "type": "crypto"},
+    {"id": "Credential Theft", "type": "behavior"},
+    {"id": "Exfiltration", "type": "behavior"},
+    {"id": "Privilege Escalation", "type": "behavior"},
+    {"id": "Defense Evasion", "type": "behavior"}
+  ],
+  "edges": [
+    {"from": "Lazarus Group", "to": "AppleJeus", "relation": "OPERATES"},
+    {"from": "AppleJeus", "to": "FALLCHILL", "relation": "DROPS"},
+
+    {"from": "AppleJeus", "to": "Cryptocurrency Exchange", "relation": "TARGETS"},
+    {"from": "AppleJeus", "to": "Financial Services", "relation": "TARGETS"},
+
+    {"from": "AppleJeus", "to": "Phishing", "relation": "USES"},
+    {"from": "Phishing", "to": "Trojanized Trading App", "relation": "DELIVERS"},
+
+    {"from": "Trojanized Trading App", "to": "MSI Installer", "relation": "FORM"},
+    {"from": "Trojanized Trading App", "to": "DMG Installer", "relation": "FORM"},
+
+    {"from": "MSI Installer", "to": "Updater.exe", "relation": "EXECUTES"},
+    {"from": "Updater.exe", "to": "C2 Server", "relation": "COMMUNICATES_WITH"},
+
+    {"from": "AppleJeus", "to": "LaunchDaemon", "relation": "USES_FOR_PERSISTENCE"},
+    {"from": "AppleJeus", "to": "Scheduled Task", "relation": "USES_FOR_PERSISTENCE"},
+
+    {"from": "AppleJeus", "to": "Credential Theft", "relation": "PERFORMS"},
+    {"from": "AppleJeus", "to": "Exfiltration", "relation": "PERFORMS"},
+
+    {"from": "AppleJeus", "to": "XOR Encryption", "relation": "USES"},
+    {"from": "AppleJeus", "to": "RC4 Encryption", "relation": "USES"},
+
+    {"from": "AppleJeus", "to": "Privilege Escalation", "relation": "PERFORMS"},
+    {"from": "AppleJeus", "to": "Defense Evasion", "relation": "PERFORMS"}
+  ],
+  "attack_techniques": [
+    "T1566.002",
+    "T1204.002",
+    "T1059",
+    "T1053.004",
+    "T1543.004",
+    "T1547",
+    "T1548",
+    "T1027",
+    "T1033",
+    "T1041",
+    "T1071.001",
+    "T1573"
+  ],
+  "observables": [
+    {
+      "type": "domain",
+      "value": "celasllc.com"
+    },
+    {
+      "type": "domain",
+      "value": "jmttrading.org"
+    },
+    {
+      "type": "file_path",
+      "value": "C:\\Program Files (x86)\\CelasTradePro\\"
+    },
+    {
+      "type": "file_path",
+      "value": "/Library/LaunchDaemons/"
+    },
+    {
+      "type": "process",
+      "value": "Updater.exe"
+    }
+  ],
+  "evidence": [
+    "Malware distributed via trojanized cryptocurrency trading applications",
+    "Victims tricked into installing signed malicious software",
+    "Persistence achieved through LaunchDaemons and scheduled tasks",
+    "Host information collected and exfiltrated to C2 servers",
+    "Used to steal cryptocurrency from exchanges"
+  ]
+}

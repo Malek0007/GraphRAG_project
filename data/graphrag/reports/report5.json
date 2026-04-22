@@ -1,0 +1,71 @@
+{
+  "report_id": "applejeus_full_campaign",
+  "threat_actor": "Lazarus Group",
+  "campaign": "AppleJeus",
+  "nodes": [
+    {"id": "Lazarus Group", "type": "threat_actor"},
+    {"id": "AppleJeus", "type": "campaign"},
+
+    {"id": "Celas Trade Pro", "type": "malware_variant"},
+    {"id": "JMT Trading", "type": "malware_variant"},
+    {"id": "Union Crypto", "type": "malware_variant"},
+    {"id": "Kupay Wallet", "type": "malware_variant"},
+    {"id": "CoinGoTrade", "type": "malware_variant"},
+    {"id": "Dorusio", "type": "malware_variant"},
+    {"id": "Ants2Whale", "type": "malware_variant"},
+
+    {"id": "Updater.exe", "type": "process"},
+    {"id": "CrashReporter.exe", "type": "process"},
+    {"id": "UnionCryptoUpdater.exe", "type": "process"},
+
+    {"id": "LaunchDaemon", "type": "persistence"},
+    {"id": "Scheduled Task", "type": "persistence"},
+    {"id": "Windows Service", "type": "persistence"},
+
+    {"id": "Phishing Email", "type": "initial_access"},
+    {"id": "Trojanized App", "type": "artifact"},
+    {"id": "C2 Server", "type": "infrastructure"},
+
+    {"id": "Credential Theft", "type": "behavior"},
+    {"id": "Exfiltration", "type": "behavior"},
+    {"id": "Privilege Escalation", "type": "behavior"}
+  ],
+  "edges": [
+    {"from": "Lazarus Group", "to": "AppleJeus", "relation": "OPERATES"},
+
+    {"from": "AppleJeus", "to": "Celas Trade Pro", "relation": "HAS_VARIANT"},
+    {"from": "AppleJeus", "to": "JMT Trading", "relation": "HAS_VARIANT"},
+    {"from": "AppleJeus", "to": "Union Crypto", "relation": "HAS_VARIANT"},
+    {"from": "AppleJeus", "to": "Kupay Wallet", "relation": "HAS_VARIANT"},
+    {"from": "AppleJeus", "to": "CoinGoTrade", "relation": "HAS_VARIANT"},
+    {"from": "AppleJeus", "to": "Dorusio", "relation": "HAS_VARIANT"},
+    {"from": "AppleJeus", "to": "Ants2Whale", "relation": "HAS_VARIANT"},
+
+    {"from": "Phishing Email", "to": "Trojanized App", "relation": "DELIVERS"},
+    {"from": "Trojanized App", "to": "Updater.exe", "relation": "EXECUTES"},
+    {"from": "Updater.exe", "to": "C2 Server", "relation": "EXFILTRATES_TO"},
+
+    {"from": "CrashReporter.exe", "to": "C2 Server", "relation": "EXFILTRATES_TO"},
+    {"from": "UnionCryptoUpdater.exe", "to": "C2 Server", "relation": "EXFILTRATES_TO"},
+
+    {"from": "AppleJeus", "to": "LaunchDaemon", "relation": "USES"},
+    {"from": "AppleJeus", "to": "Scheduled Task", "relation": "USES"},
+    {"from": "AppleJeus", "to": "Windows Service", "relation": "USES"},
+
+    {"from": "AppleJeus", "to": "Credential Theft", "relation": "PERFORMS"},
+    {"from": "AppleJeus", "to": "Exfiltration", "relation": "PERFORMS"},
+    {"from": "AppleJeus", "to": "Privilege Escalation", "relation": "PERFORMS"}
+  ],
+  "attack_techniques": [
+    "T1566.002",
+    "T1204.002",
+    "T1059",
+    "T1053.004",
+    "T1543.004",
+    "T1547",
+    "T1548",
+    "T1027",
+    "T1033",
+    "T1041"
+  ]
+}

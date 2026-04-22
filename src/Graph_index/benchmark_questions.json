@@ -1,0 +1,612 @@
+[
+  {
+    "id": "Q01",
+    "category": "exact_lookup",
+    "difficulty": "easy",
+    "question": "What is CVE-2026-25760?",
+    "reference_answer": "CVE-2026-25760 is a path traversal vulnerability (CWE-22) in the Sliver C2 framework (S0633), affecting versions prior to 1.6.11. The flaw exists in the website content subsystem and allows an authenticated operator to read arbitrary files from the server. Its CVSS v3.1 score is 6.5 (MEDIUM) with vector AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N, indicating network-exploitable, low-privilege access with high confidentiality impact.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "S0633",
+      "CWE-22"
+    ]
+  },
+  {
+    "id": "Q02",
+    "category": "exact_lookup",
+    "difficulty": "easy",
+    "question": "What is ATT&CK technique T1105?",
+    "reference_answer": "T1105 is the Ingress Tool Transfer technique under the Command and Control tactic (TA0011). Adversaries use it to transfer tools or files from an external system into a compromised environment, often over alternative protocols or existing command and control channels to avoid detection.",
+    "gold_ids": [
+      "T1105",
+      "TA0011"
+    ]
+  },
+  {
+    "id": "Q03",
+    "category": "exact_lookup",
+    "difficulty": "easy",
+    "question": "Describe the Sliver C2 framework (S0633).",
+    "reference_answer": "Sliver (S0633) is an open source, cross-platform, red team command and control framework written in Golang. It includes its own package manager called armory for staging and downloading additional tools and payloads. Sliver is used by multiple threat groups including APT29 (G0016), Cinnamon Tempest (G1021), and TA551 (G0127), as well as campaign C0018.",
+    "gold_ids": [
+      "S0633",
+      "G0016",
+      "G1021",
+      "G0127",
+      "C0018"
+    ]
+  },
+  {
+    "id": "Q04",
+    "category": "exact_lookup",
+    "difficulty": "easy",
+    "question": "What is CVE-2026-22022 and what software does it affect?",
+    "reference_answer": "CVE-2026-22022 is a HIGH severity authorization bypass vulnerability (CWE-285) in Apache Solr versions 5.3.0 through 9.10.0 that rely on the Rule Based Authorization Plugin. It allows unauthorized access and has a CVSS v3.1 score of 7.5 with vector AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N. The graph links this CVE to the Solar backdoor software (S1166) via a bridge edge.",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "S1166",
+      "CWE-285"
+    ]
+  },
+  {
+    "id": "Q05",
+    "category": "exact_lookup",
+    "difficulty": "easy",
+    "question": "What is the Naikon threat group (G0019)?",
+    "reference_answer": "Naikon (G0019) is a state-sponsored cyber espionage group attributed to the Chinese People's Liberation Army's Chengdu Military Region. The group uses software including Nebulae (S0630), RainyDay (S0629), Aria-body (S0456), and HDoor (S0061), and employs techniques such as T1047 (Windows Management Instrumentation), T1547.001 (Registry Run Keys), T1078.002 (Domain Accounts), and T1016 (System Network Configuration Discovery).",
+    "gold_ids": [
+      "G0019",
+      "S0630",
+      "T1547.001",
+      "T1047"
+    ]
+  },
+  {
+    "id": "Q06",
+    "category": "attack_relationships",
+    "difficulty": "easy",
+    "question": "What ATT&CK tactic does T1071 (Application Layer Protocol) belong to?",
+    "reference_answer": "T1071 (Application Layer Protocol) belongs to the Command and Control tactic, identified as TA0011. Adversaries use application layer protocols such as HTTP, HTTPS, DNS, and SMTP to blend malicious communications into legitimate network traffic and evade detection or network filtering.",
+    "gold_ids": [
+      "T1071",
+      "TA0011"
+    ]
+  },
+  {
+    "id": "Q07",
+    "category": "attack_relationships",
+    "difficulty": "easy",
+    "question": "What parent technique does T1071.001 (Web Protocols) belong to?",
+    "reference_answer": "T1071.001 (Web Protocols) is a sub-technique of T1071 (Application Layer Protocol), which in turn belongs to the Command and Control tactic (TA0011). Adversaries use web protocols such as HTTP and HTTPS for command and control communications to blend in with normal web traffic.",
+    "gold_ids": [
+      "T1071.001",
+      "T1071",
+      "TA0011"
+    ]
+  },
+  {
+    "id": "Q08",
+    "category": "attack_relationships",
+    "difficulty": "medium",
+    "question": "Which ATT&CK tactics does T1055 (Process Injection) belong to?",
+    "reference_answer": "T1055 (Process Injection) belongs to two ATT&CK tactics: TA0005 (Defense Evasion) and TA0004 (Privilege Escalation). Adversaries inject code into running processes to evade defenses and, when injecting into higher-privileged processes, escalate their privileges on the system. Two mitigations apply to T1055 in the graph: M1026 (Privileged Account Management) and M1040 (Behavior Prevention on Endpoint).",
+    "gold_ids": [
+      "T1055",
+      "TA0005",
+      "TA0004",
+      "M1026",
+      "M1040"
+    ]
+  },
+  {
+    "id": "Q09",
+    "category": "attack_relationships",
+    "difficulty": "medium",
+    "question": "Which mitigations apply to T1190 (Exploit Public-Facing Application)?",
+    "reference_answer": "Eight mitigations in the graph apply to T1190. M1048 (Application Isolation and Sandboxing) limits exploit impact. M1037 (Filter Network Traffic) restricts outbound connections post-exploit. M1030 (Network Segmentation) isolates external servers in a DMZ. M1016 (Vulnerability Scanning) enables rapid patching. M1026 (Privileged Account Management) limits permissions of exploited processes. M1050 (Exploit Protection) deploys WAF controls. M1035 (Limit Access to Resource Over Network) restricts unnecessary public exposure. M1051 (Update Software) ensures timely patching.",
+    "gold_ids": [
+      "T1190",
+      "M1048",
+      "M1037",
+      "M1030",
+      "M1016",
+      "M1026",
+      "M1050",
+      "M1035",
+      "M1051"
+    ]
+  },
+  {
+    "id": "Q10",
+    "category": "attack_relationships",
+    "difficulty": "medium",
+    "question": "Which sub-techniques of T1059 (Command and Scripting Interpreter) are present in the graph?",
+    "reference_answer": "The graph contains 13 sub-techniques of T1059 (Command and Scripting Interpreter): T1059.001 (PowerShell), T1059.002 (AppleScript), T1059.003 (Windows Command Shell), T1059.004 (Unix Shell), T1059.005 (Visual Basic), T1059.006 (Python), T1059.007 (JavaScript), T1059.008 (Network Device CLI), T1059.009 (Cloud API), T1059.010 (AutoHotKey and AutoIT), T1059.011 (Lua), T1059.012 (Hypervisor CLI), and T1059.013 (Container CLI/API). All belong to the Execution tactic (TA0002).",
+    "gold_ids": [
+      "T1059",
+      "T1059.001",
+      "T1059.002",
+      "T1059.003",
+      "T1059.004",
+      "T1059.005",
+      "T1059.006",
+      "T1059.007",
+      "TA0002"
+    ]
+  },
+  {
+    "id": "Q11",
+    "category": "attack_relationships",
+    "difficulty": "easy",
+    "question": "Which mitigations apply to T1027 (Obfuscated Files or Information)?",
+    "reference_answer": "Four mitigations apply to T1027 (Obfuscated Files or Information) in the graph: M1047 (Audit) for reviewing processes and tools for obfuscation, M1040 (Behavior Prevention on Endpoint) for detecting obfuscation at runtime, M1017 (User Training) to educate users, and M1049 (Antivirus/Antimalware) for signature-based detection of known obfuscated payloads.",
+    "gold_ids": [
+      "T1027",
+      "M1047",
+      "M1040",
+      "M1017",
+      "M1049"
+    ]
+  },
+  {
+    "id": "Q12",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "Which ATT&CK techniques are linked to CVE-2026-25760 via bridge edges in the graph?",
+    "reference_answer": "CVE-2026-25760 (a path traversal in the Sliver C2 framework) is linked via exploited_via bridge edges to 23 ATT&CK techniques derived from Sliver's known technique set. Key techniques include T1027 (Obfuscated Files or Information), T1055 (Process Injection), T1083 (File and Directory Discovery), T1027.004 (Compile After Delivery), T1001.002 (Steganography), T1134 (Access Token Manipulation), T1059.001 (PowerShell), T1071.004 (DNS), T1573.002 (Asymmetric Cryptography), T1090.001 (Internal Proxy), T1016 (System Network Configuration Discovery), T1113 (Screen Capture), T1071.001 (Web Protocols), T1105 (Ingress Tool Transfer), T1573.001 (Symmetric Cryptography), T1071 (Application Layer Protocol), T1041 (Exfiltration Over C2 Channel), T1548.002 (Bypass UAC), T1132.001 (Standard Encoding), T1003.001 (LSASS Memory), T1049 (System Network Connections Discovery), T1558.001 (Golden Ticket), and T1027.013 (Encrypted/Encoded File).",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "S0633",
+      "T1027",
+      "T1055",
+      "T1083",
+      "T1105",
+      "T1071",
+      "T1071.001",
+      "T1059.001",
+      "T1003.001",
+      "T1134",
+      "T1573.001",
+      "T1573.002"
+    ]
+  },
+  {
+    "id": "Q13",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "Which ATT&CK techniques are linked to CVE-2026-22184 (a zlib buffer overflow) via bridge edges?",
+    "reference_answer": "CVE-2026-22184 is a global buffer overflow (CWE-787) in the zlib untgz utility (versions up to 1.3.1.2), linked to software S0086 (ZLib). Via exploited_via bridge edges it connects to 11 ATT&CK techniques: T1105 (Ingress Tool Transfer), T1082 (System Information Discovery), T1560.002 (Archive via Library), T1543.003 (Windows Service), T1083 (File and Directory Discovery), T1113 (Screen Capture), T1059.003 (Windows Command Shell), T1007 (System Service Discovery), T1041 (Exfiltration Over C2 Channel), T1071.001 (Web Protocols), and T1036.005 (Match Legitimate Resource Name or Location).",
+    "gold_ids": [
+      "CVE-2026-22184",
+      "S0086",
+      "T1105",
+      "T1082",
+      "T1560.002",
+      "T1543.003",
+      "T1083",
+      "T1059.003",
+      "T1041",
+      "T1071.001",
+      "T1036.005"
+    ]
+  },
+  {
+    "id": "Q14",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "Which software does CVE-2026-25793 (a Nebula networking tool vulnerability) link to, and what ATT&CK techniques does that software use?",
+    "reference_answer": "CVE-2026-25793 (CWE-347, improper cryptographic signature verification in Nebula versions 1.7.0-1.10.2) is linked via a related_software bridge edge to S0630 (Nebulae) with confidence 0.923. Nebulae uses 15 ATT&CK techniques including T1105 (Ingress Tool Transfer), T1680 (Local Storage Discovery), T1005 (Data from Local System), T1095 (Non-Application Layer Protocol), T1547.001 (Registry Run Keys / Startup Folder), T1057 (Process Discovery), T1106 (Native API), T1036.004 (Masquerade Task or Service), T1070.004 (File Deletion), T1543.003 (Windows Service), T1036.005 (Match Legitimate Resource Name or Location), T1574.001 (DLL), T1059.003 (Windows Command Shell), T1083 (File and Directory Discovery), and T1573.001 (Symmetric Cryptography).",
+    "gold_ids": [
+      "CVE-2026-25793",
+      "S0630",
+      "T1105",
+      "T1095",
+      "T1547.001",
+      "T1005",
+      "T1573.001",
+      "T1083"
+    ]
+  },
+  {
+    "id": "Q15",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "Which CVEs in the graph are linked to the ZLib software (S0086) via bridge edges?",
+    "reference_answer": "Two CVEs in the graph are linked to ZLib (S0086) via related_software bridge edges. CVE-2026-22184 is a global buffer overflow (CWE-787) in the zlib untgz utility with CRITICAL severity for some vectors. CVE-2026-27171 is a CPU consumption vulnerability (CWE-1284) in zlib before version 1.3.2 via crc32_combine64, with LOW to MEDIUM severity. Both CVEs share the same set of ATT&CK technique links because they go through the same software node S0086.",
+    "gold_ids": [
+      "S0086",
+      "CVE-2026-22184",
+      "CVE-2026-27171"
+    ]
+  },
+  {
+    "id": "Q16",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "CVE-2026-22022 (Apache Solr authorization bypass) links to T1053.005 via a bridge edge. What is that technique and which tactics does it cover?",
+    "reference_answer": "T1053.005 is the Scheduled Task sub-technique of T1053 (Scheduled Task/Job). Through the graph's exploited_via bridge edge from CVE-2026-22022, it connects this Apache Solr vulnerability to scheduled task abuse. T1053 spans three tactics: TA0002 (Execution), TA0003 (Persistence), and TA0004 (Privilege Escalation), making this a cross-tactic technique. Mitigations for T1053.005 in the graph include M1026 (Privileged Account Management), M1018 (User Account Management), M1047 (Audit), and M1028 (Operating System Configuration).",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "T1053.005",
+      "T1053",
+      "TA0002",
+      "TA0003",
+      "TA0004",
+      "M1026",
+      "M1047"
+    ]
+  },
+  {
+    "id": "Q17",
+    "category": "cross_domain",
+    "difficulty": "hard",
+    "question": "What ATT&CK techniques are shared between CVE-2026-22184 and CVE-2026-27171, and why do they share them?",
+    "reference_answer": "CVE-2026-22184 and CVE-2026-27171 share an identical set of 11 ATT&CK techniques: T1105, T1082, T1560.002, T1543.003, T1083, T1113, T1059.003, T1007, T1041, T1071.001, and T1036.005. They share these techniques because both CVEs are linked to the same software node S0086 (ZLib) via related_software bridge edges. The bridge edge construction method is name_match, and the technique assignments are inherited from ZLib's known technique usage. This demonstrates how two distinct vulnerabilities in the same codebase produce overlapping ATT&CK threat profiles through the bridge layer.",
+    "gold_ids": [
+      "CVE-2026-22184",
+      "CVE-2026-27171",
+      "S0086",
+      "T1105",
+      "T1082",
+      "T1083",
+      "T1041",
+      "T1059.003"
+    ]
+  },
+  {
+    "id": "Q18",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "Which software does CVE-2026-22022 link to via the bridge graph, and which threat group is known to use that software?",
+    "reference_answer": "CVE-2026-22022 (Apache Solr authorization bypass) is linked via a related_software bridge edge to S1166 (Solar), an Iranian-attributed C#/.NET backdoor, with confidence 0.889 using name_match. Solar is used by G0049 (OilRig), a suspected Iranian threat group active since 2014 targeting Middle Eastern and international organizations. Solar was also used in campaign C0042 (Outer Space). This bridge edge creates a cross-domain path from the Apache Solr vulnerability to the OilRig threat actor.",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "S1166",
+      "G0049",
+      "C0042"
+    ]
+  },
+  {
+    "id": "Q19",
+    "category": "cross_domain",
+    "difficulty": "medium",
+    "question": "Which defense evasion techniques does CVE-2026-25760 link to via bridge edges in the graph?",
+    "reference_answer": "CVE-2026-25760 (Sliver C2 path traversal) links to several techniques that fall under the Defense Evasion tactic (TA0005) via exploited_via bridge edges. These include T1027 (Obfuscated Files or Information) and its sub-techniques T1027.004 (Compile After Delivery) and T1027.013 (Encrypted/Encoded File), T1055 (Process Injection), T1036.005 (Match Legitimate Resource Name or Location), T1134 (Access Token Manipulation), and T1548.002 (Bypass User Account Control). All are derived from Sliver's known technique usage through the bridge layer.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "S0633",
+      "T1027",
+      "T1027.004",
+      "T1027.013",
+      "T1055",
+      "T1134",
+      "T1548.002",
+      "TA0005"
+    ]
+  },
+  {
+    "id": "Q20",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Which threat groups are connected to CVE-2026-25760 through the bridge graph, and what is the full reasoning path?",
+    "reference_answer": "CVE-2026-25760 connects to three threat groups via a two-hop bridge path: CVE-2026-25760 \u2192 [related_software] \u2192 S0633 (Sliver) \u2192 [uses] \u2192 G0016 (APT29), G1021 (Cinnamon Tempest), and G0127 (TA551). APT29 is a Russian SVR-attributed group. Cinnamon Tempest is a China-based ransomware group active since 2021. TA551 is a financially-motivated group active since 2018. Additionally, campaign C0018 also uses Sliver. This multi-hop path demonstrates the bridge layer enabling CVE-to-threat-actor attribution that would not be possible with single-hop retrieval.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "S0633",
+      "G0016",
+      "G1021",
+      "G0127",
+      "C0018"
+    ]
+  },
+  {
+    "id": "Q21",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Which threat group is connected to CVE-2026-25793 through the Nebulae software, and what techniques does that group use?",
+    "reference_answer": "CVE-2026-25793 \u2192 [related_software] \u2192 S0630 (Nebulae) \u2192 [uses] \u2192 G0019 (Naikon). Naikon is a Chinese PLA-attributed espionage group. Techniques Naikon uses include T1078.002 (Domain Accounts), T1018 (Remote System Discovery), T1547.001 (Registry Run Keys / Startup Folder), T1518.001 (Security Software Discovery), T1046 (Network Service Discovery), T1047 (Windows Management Instrumentation), T1137.006 (Add-ins), T1016 (System Network Configuration Discovery), and T1053.005 (Scheduled Task). The path from this CVE to Naikon is a two-hop bridge traversal: vulnerability layer to attack layer to threat actor.",
+    "gold_ids": [
+      "CVE-2026-25793",
+      "S0630",
+      "G0019",
+      "T1547.001",
+      "T1047",
+      "T1078.002",
+      "T1053.005"
+    ]
+  },
+  {
+    "id": "Q22",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Which threat group is connected to CVE-2026-22022 and CVE-2026-22444 through the Solar backdoor, and what campaign did they run?",
+    "reference_answer": "Both CVE-2026-22022 and CVE-2026-22444 (both Apache Solr vulnerabilities) connect to G0049 (OilRig) via the two-hop path: CVE \u2192 [related_software] \u2192 S1166 (Solar) \u2192 [uses] \u2192 G0049. OilRig is a suspected Iranian threat group active since 2014. Solar (S1166) is a C#/.NET backdoor deployed by OilRig during the Outer Space campaign (C0042). OilRig is also attributed to campaign C0044 (Juicy Mix). The techniques Solar uses and OilRig employs include T1053.005 (Scheduled Task), T1105 (Ingress Tool Transfer), T1020 (Automated Exfiltration), T1073.001 (Symmetric Cryptography), T1041 (Exfiltration Over C2 Channel), T1082 (System Information Discovery), T1070.004 (File Deletion), and T1132.001 (Standard Encoding).",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "CVE-2026-22444",
+      "S1166",
+      "G0049",
+      "C0042",
+      "C0044"
+    ]
+  },
+  {
+    "id": "Q23",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Following the chain CVE-2026-25760 \u2192 Sliver (S0633) \u2192 APT29 (G0016), which credential access techniques does APT29 use in the graph?",
+    "reference_answer": "Tracing the three-hop path: CVE-2026-25760 links to S0633 (Sliver) via related_software; Sliver is used by G0016 (APT29); APT29 uses several credential access techniques falling under TA0006. From the graph, APT29's credential access techniques include T1621 (Multi-Factor Authentication Request Generation), T1003.002 (Security Account Manager), T1528 (Steal Application Access Token), T1110.003 (Password Spraying), T1556.007 (Hybrid Identity), T1110.001 (Password Guessing), T1003.004 (LSA Secrets), and T1649 (Steal or Forge Authentication Certificates). This three-hop path from a specific CVE to a nation-state group's credential theft toolkit is precisely the kind of cross-domain reasoning the bridge layer enables.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "S0633",
+      "G0016",
+      "T1003.002",
+      "T1003.004",
+      "T1528",
+      "T1621",
+      "TA0006"
+    ]
+  },
+  {
+    "id": "Q24",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Which mitigations apply to the process injection technique linked to CVE-2026-25760?",
+    "reference_answer": "CVE-2026-25760 links via bridge edges to T1055 (Process Injection). Following one more hop to mitigation edges, T1055 has two mitigations in the graph: M1026 (Privileged Account Management), which limits what privileges an injected process can acquire, and M1040 (Behavior Prevention on Endpoint), which can detect abnormal process injection activity at runtime. The reasoning path is: CVE-2026-25760 \u2192 [exploited_via] \u2192 T1055 \u2192 [mitigated_by] \u2192 M1026, M1040.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "T1055",
+      "M1026",
+      "M1040"
+    ]
+  },
+  {
+    "id": "Q25",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Which ATT&CK tactic categories cover the techniques that CVE-2026-22022 links to via bridge edges?",
+    "reference_answer": "CVE-2026-22022 links to eight techniques via exploited_via bridge edges, spanning five ATT&CK tactics. T1053.005 (Scheduled Task) falls under TA0002 (Execution), TA0003 (Persistence), and TA0004 (Privilege Escalation). T1105 (Ingress Tool Transfer) and T1573.001 (Symmetric Cryptography) and T1132.001 (Standard Encoding) fall under TA0011 (Command and Control). T1020 (Automated Exfiltration) and T1041 (Exfiltration Over C2 Channel) fall under TA0010 (Exfiltration). T1082 (System Information Discovery) falls under TA0007 (Discovery). T1070.004 (File Deletion) falls under TA0005 (Defense Evasion). This multi-tactic spread \u2014 from a single Apache Solr authorization vulnerability \u2014 illustrates the value of bridge-edge reasoning.",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "T1053.005",
+      "T1105",
+      "T1020",
+      "T1041",
+      "T1082",
+      "T1070.004",
+      "T1573.001",
+      "TA0002",
+      "TA0003",
+      "TA0005",
+      "TA0007",
+      "TA0010",
+      "TA0011"
+    ]
+  },
+  {
+    "id": "Q26",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "CVE-2026-25793 links to Nebulae (S0630), used by Naikon (G0019). Which persistence techniques does Naikon use according to the graph?",
+    "reference_answer": "Following the chain CVE-2026-25793 \u2192 [related_software] \u2192 S0630 (Nebulae) \u2192 [uses] \u2192 G0019 (Naikon), and then filtering Naikon's techniques to those under TA0003 (Persistence) or TA0004 (Privilege Escalation): Naikon uses T1547.001 (Registry Run Keys / Startup Folder) which falls under both TA0003 (Persistence) and TA0004 (Privilege Escalation), T1137.006 (Office Application Startup: Add-ins) which falls under TA0003 (Persistence), and T1053.005 (Scheduled Task) which covers TA0002 (Execution), TA0003 (Persistence), and TA0004 (Privilege Escalation). This three-hop chain connects a network-layer vulnerability to a threat actor's persistence toolkit.",
+    "gold_ids": [
+      "CVE-2026-25793",
+      "S0630",
+      "G0019",
+      "T1547.001",
+      "T1137.006",
+      "T1053.005",
+      "TA0003",
+      "TA0004"
+    ]
+  },
+  {
+    "id": "Q27",
+    "category": "mixed_metadata",
+    "difficulty": "hard",
+    "question": "What is the CVSS severity and CWE of CVE-2026-22022, and which exfiltration technique does it link to via bridge edges?",
+    "reference_answer": "CVE-2026-22022 (Apache Solr authorization bypass) has a CVSS v3.1 score of 7.5 HIGH with vector AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N, indicating a network-exploitable vulnerability requiring no privileges with high confidentiality impact. It is categorized under CWE-285 (Improper Authorization). Via bridge edges, it links to two exfiltration techniques: T1020 (Automated Exfiltration) and T1041 (Exfiltration Over C2 Channel), both falling under TA0010 (Exfiltration). The bridge connection runs through S1166 (Solar backdoor), linking the Solr vulnerability's exploit potential to its post-compromise exfiltration behavior.",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "CWE-285",
+      "T1020",
+      "T1041",
+      "TA0010",
+      "S1166"
+    ]
+  },
+  {
+    "id": "Q28",
+    "category": "mixed_metadata",
+    "difficulty": "hard",
+    "question": "Compare CVE-2026-22184 and CVE-2026-27171. Both affect zlib \u2014 how do they differ in severity, CWE, and attack surface?",
+    "reference_answer": "Both CVEs affect the zlib library and share software node S0086, but they differ significantly. CVE-2026-22184 is a global buffer overflow (CWE-787, Out-of-Bounds Write) in the untgz utility, rated CRITICAL for some vectors and MEDIUM for others with CVSS v3.1 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H, indicating a remotely exploitable, high-impact flaw. CVE-2026-27171 is a CPU consumption issue (CWE-1284, Improper Validation of Specified Quantity in Input) via crc32_combine64, rated LOW to MEDIUM with CVSS AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H, an availability-only local attack. Despite their different root causes and severity, both inherit the same ATT&CK technique profile through S0086, highlighting a limitation of product-name-based bridge matching.",
+    "gold_ids": [
+      "CVE-2026-22184",
+      "CVE-2026-27171",
+      "S0086",
+      "CWE-787",
+      "CWE-1284"
+    ]
+  },
+  {
+    "id": "Q29",
+    "category": "mixed_metadata",
+    "difficulty": "hard",
+    "question": "CVE-2026-22444 is a HIGH severity Apache Solr vulnerability with CWE-20. Which ATT&CK techniques does it link to, and which of those fall under the Execution tactic?",
+    "reference_answer": "CVE-2026-22444 (Apache Solr create-core API insufficient input validation, CWE-20 Improper Input Validation) has CVSS v3.1 score 7.1 HIGH with vector AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N. Via bridge edges through S1166 (Solar), it connects to eight techniques: T1053.005 (Scheduled Task), T1105 (Ingress Tool Transfer), T1020 (Automated Exfiltration), T1573.001 (Symmetric Cryptography), T1041 (Exfiltration Over C2 Channel), T1082 (System Information Discovery), T1070.004 (File Deletion), and T1132.001 (Standard Encoding). Of these, only T1053.005 (Scheduled Task) falls under the Execution tactic (TA0002), as its parent T1053 spans TA0002, TA0003, and TA0004.",
+    "gold_ids": [
+      "CVE-2026-22444",
+      "CWE-20",
+      "S1166",
+      "T1053.005",
+      "T1105",
+      "T1020",
+      "T1041",
+      "T1082",
+      "TA0002"
+    ]
+  },
+  {
+    "id": "Q30",
+    "category": "mixed_metadata",
+    "difficulty": "hard",
+    "question": "For CVE-2026-25760 (Sliver C2), what is the CWE weakness type and CVSS severity, and which ATT&CK techniques linked via bridge edges fall under Defense Evasion (TA0005)?",
+    "reference_answer": "CVE-2026-25760 is a path traversal vulnerability (CWE-22, Path Traversal) in the Sliver C2 framework with CVSS v3.1 score 6.5 MEDIUM (AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N). Via bridge edges through S0633 (Sliver), it links to 23 ATT&CK techniques. Those falling under TA0005 (Defense Evasion) include: T1027 (Obfuscated Files or Information), T1027.004 (Compile After Delivery), T1027.013 (Encrypted/Encoded File), T1055 (Process Injection), T1036.005 (Match Legitimate Resource Name or Location), T1134 (Access Token Manipulation), and T1548.002 (Bypass User Account Control). The combination of a medium-severity path traversal in a C2 tool and its broad defense evasion technique coverage illustrates how bridge edges expose the full offensive capability profile of a vulnerable tool.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "CWE-22",
+      "S0633",
+      "T1027",
+      "T1027.004",
+      "T1027.013",
+      "T1055",
+      "T1134",
+      "T1548.002",
+      "TA0005"
+    ]
+  },
+  {
+    "id": "Q31",
+    "category": "stress_negative",
+    "difficulty": "medium",
+    "question": "Which mitigations apply to T1113 (Screen Capture)?",
+    "reference_answer": "The graph contains no mitigation edges for T1113 (Screen Capture). T1113 belongs to the Collection tactic (TA0009). Unlike techniques such as T1055 or T1027, no M-code mitigation is connected to T1113 in the ATT&CK graph. A correct system should surface T1113 and TA0009 but report zero mitigations.",
+    "gold_ids": [
+      "T1113",
+      "TA0009"
+    ]
+  },
+  {
+    "id": "Q32",
+    "category": "stress_negative",
+    "difficulty": "medium",
+    "question": "Does T1082 (System Information Discovery) have any mitigations in the graph?",
+    "reference_answer": "T1082 (System Information Discovery) has no mitigations in the graph. It belongs to the Discovery tactic (TA0007). Adversaries use this technique to gather system information, but MITRE ATT&CK does not list mitigations for it because restricting system information queries would break normal operations. The graph should return T1082 and TA0007 but no M-code nodes.",
+    "gold_ids": [
+      "T1082",
+      "TA0007"
+    ]
+  },
+  {
+    "id": "Q33",
+    "category": "stress_multi_cve",
+    "difficulty": "hard",
+    "question": "Which bridge CVEs in the graph all link to T1105 (Ingress Tool Transfer)?",
+    "reference_answer": "All six bridge CVEs in the graph link to T1105 (Ingress Tool Transfer) via exploited_via edges: CVE-2026-22184 (zlib buffer overflow), CVE-2026-22022 (Apache Solr authorization bypass), CVE-2026-22444 (Apache Solr input validation), CVE-2026-25760 (Sliver path traversal), CVE-2026-25793 (Nebula cryptographic verification), and CVE-2026-27171 (zlib CPU consumption). This makes T1105 the most cross-CVE-linked technique in the graph, inherited from all matched software packages.",
+    "gold_ids": [
+      "T1105",
+      "CVE-2026-22184",
+      "CVE-2026-22022",
+      "CVE-2026-22444",
+      "CVE-2026-25760",
+      "CVE-2026-25793",
+      "CVE-2026-27171"
+    ]
+  },
+  {
+    "id": "Q34",
+    "category": "stress_multi_tactic",
+    "difficulty": "hard",
+    "question": "Which ATT&CK tactics does T1556.003 (Pluggable Authentication Modules) belong to?",
+    "reference_answer": "T1556.003 (Pluggable Authentication Modules) is a sub-technique of T1556 (Modify Authentication Process) and spans three ATT&CK tactics: TA0006 (Credential Access), TA0005 (Defense Evasion), and TA0003 (Persistence). Adversaries modify PAM to intercept credentials (TA0006), hide their presence (TA0005), and maintain access across reboots (TA0003). This triple-tactic coverage makes it one of the most broadly scoped techniques in the graph.",
+    "gold_ids": [
+      "T1556.003",
+      "T1556",
+      "TA0006",
+      "TA0005",
+      "TA0003"
+    ]
+  },
+  {
+    "id": "Q35",
+    "category": "stress_depth3",
+    "difficulty": "hard",
+    "question": "CVE-2026-22022 links to Solar (S1166), which was used in the Outer Space campaign (C0042) by OilRig. Which techniques did that campaign use?",
+    "reference_answer": "Following the depth-3 chain CVE-2026-22022 \u2192 [related_software] \u2192 S1166 (Solar) \u2192 [used_in] \u2192 C0042 (Outer Space) \u2192 [uses] \u2192 techniques: Campaign C0042 (Outer Space), conducted by OilRig (G0049) throughout 2021, used T1105 (Ingress Tool Transfer), T1584.004 (Compromise Infrastructure: Server), T1217 (Browser Information Discovery), T1071.001 (Web Protocols), T1585.003 (Establish Accounts: Cloud Accounts), T1027.013 (Encrypted/Encoded File), T1587.001 (Develop Capabilities: Malware), and T1059.005 (Visual Basic). The software used in the campaign includes S1166 (Solar) and S1168 (SampleCheck5000).",
+    "gold_ids": [
+      "CVE-2026-22022",
+      "S1166",
+      "C0042",
+      "G0049",
+      "T1105",
+      "T1071.001",
+      "T1027.013",
+      "T1059.005"
+    ]
+  },
+  {
+    "id": "Q36",
+    "category": "stress_intersection",
+    "difficulty": "hard",
+    "question": "Which ATT&CK techniques are linked to both CVE-2026-22184 and CVE-2026-25793 via bridge edges?",
+    "reference_answer": "CVE-2026-22184 (zlib buffer overflow via S0086) and CVE-2026-25793 (Nebula cryptographic bypass via S0630) share five techniques in common: T1105 (Ingress Tool Transfer), T1543.003 (Windows Service), T1036.005 (Match Legitimate Resource Name or Location), T1059.003 (Windows Command Shell), and T1083 (File and Directory Discovery). These overlapping techniques reflect behaviors common to both ZLib and Nebulae software. The non-overlapping techniques reveal the distinct offensive profiles of each software package.",
+    "gold_ids": [
+      "CVE-2026-22184",
+      "CVE-2026-25793",
+      "T1105",
+      "T1543.003",
+      "T1036.005",
+      "T1059.003",
+      "T1083"
+    ]
+  },
+  {
+    "id": "Q37",
+    "category": "stress_multi_tactic",
+    "difficulty": "hard",
+    "question": "Which ATT&CK tactics does T1574.007 (Path Interception by PATH Environment Variable) span, and what mitigations apply?",
+    "reference_answer": "T1574.007 spans three tactics: TA0003 (Persistence), TA0004 (Privilege Escalation), and TA0005 (Defense Evasion). It is a sub-technique of T1574 (Hijack Execution Flow). Three mitigations apply: M1022 (Restrict File and Directory Permissions), M1038 (Execution Prevention), and M1047 (Audit). This triple-tactic technique is relevant when adversaries hijack PATH environment variables to force loading of malicious libraries before legitimate ones.",
+    "gold_ids": [
+      "T1574.007",
+      "T1574",
+      "TA0003",
+      "TA0004",
+      "TA0005",
+      "M1022",
+      "M1038",
+      "M1047"
+    ]
+  },
+  {
+    "id": "Q38",
+    "category": "stress_overlap",
+    "difficulty": "hard",
+    "question": "Which ATT&CK techniques do both Cinnamon Tempest (G1021) and the Sliver software (S0633) use in the graph?",
+    "reference_answer": "Cinnamon Tempest (G1021) and Sliver (S0633) share two techniques in the graph: T1059.001 (PowerShell) and T1105 (Ingress Tool Transfer). Cinnamon Tempest uses Sliver directly, so this overlap is expected. Cinnamon Tempest has a broader technique set including T1190 (Exploit Public-Facing Application), T1543.003 (Windows Service), and T1574.001 (DLL), while Sliver additionally employs T1027 (Obfuscated Files or Information) and T1055 (Process Injection) among others.",
+    "gold_ids": [
+      "G1021",
+      "S0633",
+      "T1059.001",
+      "T1105"
+    ]
+  },
+  {
+    "id": "Q39",
+    "category": "stress_pruning",
+    "difficulty": "hard",
+    "question": "Which techniques linked to CVE-2026-25760 via bridge edges have no mitigations in the graph?",
+    "reference_answer": "Several techniques linked to CVE-2026-25760 (Sliver path traversal) via exploited_via bridge edges have no mitigations in the graph: T1083 (File and Directory Discovery), T1113 (Screen Capture), T1049 (System Network Connections Discovery), T1027.004 (Compile After Delivery), T1027.013 (Encrypted/Encoded File), T1001.002 (Steganography), T1016 (System Network Configuration Discovery), and T1558.001 (Golden Ticket). By contrast, T1055 (mitigated by M1026, M1040) and T1027 (mitigated by M1047, M1040, M1017, M1049) do have mitigations. This distinction tests whether the system can differentiate mitigated from unmitigated techniques within the same bridge cluster.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "T1083",
+      "T1113",
+      "T1049",
+      "T1027.004"
+    ]
+  },
+  {
+    "id": "Q40",
+    "category": "stress_depth3",
+    "difficulty": "hard",
+    "question": "Which initial access techniques does Cinnamon Tempest (G1021) use, and how does this connect back to CVE-2026-25760?",
+    "reference_answer": "Cinnamon Tempest (G1021) uses T1190 (Exploit Public-Facing Application), which falls under the Initial Access tactic (TA0001). The connection back to CVE-2026-25760 is a two-hop bridge path: CVE-2026-25760 \u2192 [related_software] \u2192 S0633 (Sliver) \u2192 [uses by] \u2192 G1021 (Cinnamon Tempest) \u2192 [uses] \u2192 T1190. This three-hop chain links a specific C2 framework vulnerability to a threat group that exploits public-facing applications for initial access, demonstrating the full offensive lifecycle encoded in the bridge graph.",
+    "gold_ids": [
+      "CVE-2026-25760",
+      "S0633",
+      "G1021",
+      "T1190",
+      "TA0001"
+    ]
+  }
+]
